@@ -1,0 +1,26 @@
+.content-wrapper{
+    min-width: 56rem;
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    .person-wrapper{
+        position: absolute;
+        left:-0.5rem;
+        width: 50%;
+        height: 100%;
+    }
+    .developer-wrapper{
+        position: absolute;
+        right: -0.5rem;
+        height: 100%;
+        width: 50%;
+    }
+    .vertical-line{
+        width:0.2rem;
+        background-color:white;
+        opacity: 85%;
+        height:100%;
+        margin: 0rem 0.5rem;
+    }
+}

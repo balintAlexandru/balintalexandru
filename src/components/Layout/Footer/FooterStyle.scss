@@ -1,0 +1,17 @@
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        display: flex;
+        gap:3rem;
+    }
+    .footer-contact{
+        font-size:1.6rem;
+        color:white;
+        opacity: 80%;
+        font-weight:400;
+        cursor: pointer;
+    }
+}
