@@ -1,13 +1,12 @@
+import Layout from "./pages/Layout/Layout";
+import Content from "./pages/Content/Content";
 
-import Layout from "./components/Layout/Layout";
-import Content from "./components/Content/Content";
-
-const  App = () => {
+const App = () => {
   return (
     <Layout>
       <Content />
     </Layout>
   );
-}
+};
 
 export default App;

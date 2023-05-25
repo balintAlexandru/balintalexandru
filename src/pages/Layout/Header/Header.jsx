@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import "./HeaderStyle.scss";
+import { triggerSlideInAnimation } from "../../../utils/gsap/animations";
+import { path } from "../../../utils/gsap/constants";
 
 const Header = () => {
+  useEffect(()=>{
+    triggerSlideInAnimation(path.layoutHeader, 90, 0 , 0.5, 3);
+  },[])
+
   return (
     <header>
       <div className="header-text-wrapper">

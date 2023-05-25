@@ -1,0 +1,141 @@
+.experience-container {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  width: 35rem;
+  height: 100%;
+  p {
+    font-size: 3.4rem;
+    color: white;
+  }
+  .experience-text {
+    width: 100%;
+    height: 90%;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    .experience-item-container {
+      display: flex;
+      flex-direction: column;
+      .item-wrapper {
+        display: flex;
+        flex-direction: column;
+        .row-1 {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+          .circle {
+            height: 1.5rem;
+            width: 1.5rem;
+            background-color: rgba(202, 198, 198, 0.473);
+            border-radius: 50%;
+            display: none;
+          }
+          span {
+            color: white;
+            font-size: 1.8rem;
+            display: none;
+            height: 1.5rem;
+          }
+        }
+        .row-2 {
+          display: flex;
+          margin-left: 0.7rem;
+          gap: 2rem;
+          .line {
+            width: 0.2rem;
+            height: 10rem;
+            display: none;
+          }
+          .wrapper {
+            display: flex;
+            width: 100%;
+            padding-top: 2rem;
+            gap: 1.5rem;
+            display: none;
+            img {
+              width: 5rem;
+              height: 5rem;
+              border-radius: 50%;
+              cursor: default;
+            }
+            .item-text {
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+              h2 {
+                color: white;
+                font-size: 1.8rem;
+                font-weight: 600;
+                cursor: default;
+              }
+              span {
+                color: white;
+                font-size: 1.4rem;
+                font-style: italic;
+              }
+            }
+          }
+        }
+      }
+    }
+    .experience-button-wrapper {
+      display: flex;
+      flex-direction: column;
+      .line {
+        width: 0.2rem;
+        height: 2.5rem;
+        background-color: rgba(202, 198, 198, 0.473);
+        margin-left: 0.7rem;
+        display: none;
+      }
+      .button-wrapper {
+        display: flex;
+        margin-left: 0.1rem;
+        gap: 1rem;
+        .circle {
+          height: 1.5rem;
+          width: 1.5rem;
+          background-color: rgba(202, 198, 198, 0.473);
+          border-radius: 50%;
+          display: none;
+        }
+        .animation-button {
+          display: none;
+        }
+      }
+      // margin-top: 5rem;
+      // margin-left: 0.5rem;
+    }
+  }
+  .bottom-line-experience {
+    position: absolute;
+    left: -1.5rem;
+    bottom: 0;
+    height: 0.1rem;
+    background-color: white;
+    opacity: 85%;
+  }
+  .experience-close-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .experience-present-button {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 7rem;
+    height: 7rem;
+    background: #334bd3;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+}

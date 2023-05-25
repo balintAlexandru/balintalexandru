@@ -63,6 +63,7 @@ const MagneticPerson = (props) => {
   const { element, text} = props;
   useEffect(() => {
     initStickyCursorWithDelay(element);
+  // eslint-disable-next-line 
   }, []);
 
   return (
