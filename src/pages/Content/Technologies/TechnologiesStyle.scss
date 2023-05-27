@@ -1,0 +1,51 @@
+.technologies-container {
+  position: absolute;
+  top: 0;
+  right: 0.5em;
+  width: 60rem;
+  height: 100%;
+  padding-right: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  // border: 2px solid red;
+  padding-right: 2rem;
+  overflow: hidden;
+  p {
+    font-size: 3rem;
+    opacity: 95%;
+    font-weight: 600;
+    color: white;
+  }
+  .technologies-globe-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  .bottom-line-technologies {
+    position: absolute;
+    bottom: 0rem;
+    right: -0.4rem;
+    background-color: white;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    height: 0.1rem;
+    width: 100%;
+  }
+  .about-me-close-button {
+    padding-bottom: 1rem;
+  }
+  .technologies-bottom-wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}

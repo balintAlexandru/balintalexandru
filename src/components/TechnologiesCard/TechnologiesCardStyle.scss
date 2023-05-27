@@ -1,0 +1,35 @@
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #141516;
+  padding: 2rem 4rem;
+  width: 60%;
+  height: 100%;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  gap: 1.2rem;
+  .card-row-1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    p {
+      font-size: 2.4rem;
+      color: white;
+      opacity: 80%;
+      text-transform: uppercase;
+    }
+  }
+  .card-row-2 {
+    p {
+      font-size: 1.6rem;
+      color: white;
+      opacity: 60%;
+      letter-spacing: 0.03rem;
+      font-weight: 400;
+    }
+  }
+}

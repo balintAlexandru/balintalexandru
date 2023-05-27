@@ -7527,12 +7527,19 @@ react-error-overlay@^6.0.11:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.11.tgz#92835de5841c5cf08ba00ddd2d677b6d17ff9adb"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
 
-react-icon-cloud@^4.1.4:
-  version "4.1.4"
-  resolved "https://registry.yarnpkg.com/react-icon-cloud/-/react-icon-cloud-4.1.4.tgz#a6aa7a2d6f48a0eaacb091ca9fe830568a840c0e"
-  integrity sha512-hc8yGNU98V6ObPdeNIt75M016xGMxbTWqB4l6exo1uwE5bvFU095unMbX2K3YBKYhGKEV3c7fSmq3jD3cRWX+A==
+react-hooks-visible@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-hooks-visible/-/react-hooks-visible-1.1.1.tgz#67a12a395b670067fe9d2ce25cb4d84788a83a3b"
+  integrity sha512-ACBaW/wKv/pfNh36MpDKoh8fL6nAsw7OHyUYj5RLefVMxoe/PrUIupwpafk8juLPX3v+yDuobSI3EcSvJYeUWg==
+
+react-icon-cloud@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-icon-cloud/-/react-icon-cloud-2.0.1.tgz#0b4bdbbd127ba4225b5e177ab8de6236e5998160"
+  integrity sha512-9MhbG7jWxOHrG2kaCJ+Ufj3JFvqdJhgO+5EX+RDXaq8yVncOQ7hfJKADNvTo+h9/JFqYN+09rREIE4r1qls+Qw==
   dependencies:
     "@csstools/convert-colors" "^2.0.0"
+    react-hooks-visible "^1.1.1"
+    uuid "^8.3.2"
 
 react-icons@^4.8.0:
   version "4.8.0"
@@ -8075,10 +8082,10 @@ signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
-simple-icons@^8.15.0:
-  version "8.15.0"
-  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-8.15.0.tgz#986391c0fa9e26836270c56dc70e714ae3f1dac4"
-  integrity sha512-W9USb8Yic98wAZc9HpjMyH/wrJZx/BRqGK82SsmdApFaO5XqYe5peWV5A18XLYIgdcAsUC6PS2Z0STJoHdNXXQ==
+simple-icons@5.14.0:
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-5.14.0.tgz#c3fe760f1fd9a1a1fec355d68a66ad9a2b637e06"
+  integrity sha512-FSjRh93nsg84RJm9SvtbGIrmgteuvELxreZ5nusIRdSxg2EIswy7FTJxQvEUu15doYkUWhN+kPAZIvwBYYnKUQ==
 
 sisteransi@^1.0.5:
   version "1.0.5"

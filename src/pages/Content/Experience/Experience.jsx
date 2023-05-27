@@ -5,7 +5,6 @@ import {
   fadeInShowAnimation,
   triggerShowAnimation,
   lineShowAnimation,
-  triggetAnimationList,
   triggerShowAnimationDuration,
   triggerVerticalAnimationLine,
 } from "../../../utils/gsap/animations";

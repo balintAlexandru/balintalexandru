@@ -119,6 +119,22 @@ export const triggerPersonNavigation = (element) => {
   );
 };
 
+export const triggerDeveloperNavigation = (element) => {
+  gsap.fromTo(
+    element,
+    {
+      x: 90,
+      opacity: 0,
+    },
+    {
+      x: 0,
+      opacity: 1,
+      delay: 0.2,
+      duration: 0.3,
+    }
+  );
+};
+
 export const triggerSlideInAnimation = (
   element,
   yStartPoz,
@@ -141,18 +157,22 @@ export const triggerSlideInAnimation = (
   );
 };
 
-export const triggetAnimationList = (element, delay) => {
+export const triggerGoDownAnimation = (element, duration, delay, yPoza) => {
+  gsap.to(element, { duration: duration, delay: delay, y: 150 });
+};
+export const triggerGoUpAnimation = (element, duration, delay) => {
+  gsap.to(element, { duration: duration, delay: delay, y: 0 });
+};
+
+export const triggerShowScaleAnimation = (element) => {
   gsap.fromTo(
     element,
+    1.5,
     {
-      x: -200,
-      opacity: 0,
+      scale: 0,
     },
     {
-      x: 0,
-      opacity: 1,
-      delay: delay,
-      duration: 0.5,
+      scale: 1,
     }
   );
 };

@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import Image from "./Image/Image";
 import "./ContentStyle.scss";
-import {
-  triggerHideAnimation,
-  triggerShowAnimation,
-  triggerXPozAnimation,
-} from "../../utils/gsap/animations";
+import { triggerXPozAnimation } from "../../utils/gsap/animations";
 import person from "../../../src/assets/images/person.png";
 import developer from "../../../src/assets/images/developer.png";
 import MagneticPerson from "../../components/MagneticPerson/MagneticPerson";
@@ -17,6 +13,7 @@ import AboutMe from "./AboutMe/AboutMe";
 
 import { path } from "../../utils/gsap/constants";
 import TransitionOut from "../../components/TransitionOut/TransitionOut";
+import Technologies from "./Technologies/Technologies";
 
 const Content = () => {
   const [showCursorDelay, setShowCursorDelay] = useState(false);
@@ -26,7 +23,7 @@ const Content = () => {
   const [showDeveloperNavigation, setShowDeveloperNavigation] = useState(false);
   const [selectedExperience, setSelectedExperience] = useState(false);
   const [selectedAboutMe, setSelectedAboutMe] = useState(false);
-  // const [showDots, setShowDots] = useState(false);
+  const [selectedTechnologies, setSelectedTechnologies] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -77,7 +74,12 @@ const Content = () => {
             setShowPersonNavigation={setShowPersonNavigation}
           />
         )}
-        {showDeveloperNavigation && <DeveloperNavigation />}
+        {showDeveloperNavigation && (
+          <DeveloperNavigation
+            technologies={setSelectedTechnologies}
+            setShowDeveloperNavigation={setShowDeveloperNavigation}
+          />
+        )}
 
         <div
           className="developer-wrapper"
@@ -122,6 +124,15 @@ const Content = () => {
             <AboutMe
               onClose={setSelectedAboutMe}
               setShowPersonNavigation={setShowPersonNavigation}
+            />
+          </div>
+        )}
+
+        {selectedTechnologies && (
+          <div className="developer-person-content">
+            <Technologies
+              onClose={setSelectedTechnologies}
+              setShowDeveloperNavigation={setShowDeveloperNavigation}
             />
           </div>
         )}
