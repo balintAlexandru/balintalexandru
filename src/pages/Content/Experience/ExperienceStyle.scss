@@ -4,9 +4,10 @@
   left: 1rem;
   width: 35rem;
   height: 100%;
-  p {
-    font-size: 3.4rem;
-    color: white;
+  .experience-title {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
   }
   .experience-text {
     width: 100%;
@@ -31,7 +32,7 @@
             display: none;
           }
           span {
-            color: white;
+            color: rgba(255, 255, 255, 0.8);
             font-size: 1.8rem;
             display: none;
             height: 1.5rem;
@@ -63,13 +64,13 @@
               flex-direction: column;
               gap: 0.5rem;
               h2 {
-                color: white;
+                color: rgba(255, 255, 255, 0.7);
                 font-size: 1.8rem;
                 font-weight: 600;
                 cursor: default;
               }
               span {
-                color: white;
+                color: rgba(255, 255, 255, 0.6);
                 font-size: 1.4rem;
                 font-style: italic;
               }

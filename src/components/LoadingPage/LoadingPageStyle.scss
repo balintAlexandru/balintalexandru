@@ -1,16 +1,65 @@
 .loading-page-wrapper {
-    width: 20rem;
-  p {
+  width: 30rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  // border: 2px solid red;
+  overflow: hidden;
+  flex-direction: column;
+  .loading-box {
+    width: 100%;
+    height: 100%;
+    // border: 2px solid blue;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .last-name {
+      font-size: 4.5rem;
+      color: #456fc2;
+      font-weight: 600;
+      cursor: default;
+      position: absolute;
+      top: 8rem;
+    }
+    .first-name {
+      font-size: 4rem;
+      color: #b85b5b;
+      font-weight: 600;
+      cursor: default;
+      position: absolute;
+      top: -6rem;
+    }
+  }
+  .loading-text {
     text-align: center;
     color: white;
     font-size: 3rem;
     margin-bottom: 0.2rem;
+    height: 4rem;
+    position: absolute;
+    top: 3rem;
     span {
       color: white;
-      font-size:3rem;
+      font-size: 3rem;
     }
   }
-  hr{
+  hr {
     width: 0;
   }
+}
+.loading-role {
+  font-size: 4rem;
+  width: 60rem;
+  color: white;
+  opacity: 80%;
+  font-weight: 400;
+  cursor: default;
+  top: 30%;
+  left: -25%;
+  display: none;
+  position: absolute;
 }

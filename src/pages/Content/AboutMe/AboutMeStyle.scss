@@ -1,48 +1,46 @@
 .about-me-container {
-    position: absolute;
-    top: 0;
-    left: 1rem;
-    width: 40rem;
-    height: 100%;
-    padding-left:1rem;
-    p {
-      font-size: 4rem;
-      opacity: 95%;
-      font-weight: 600;
-      color: white;
-    }
-    .about-me-text {
-      width: 100%;
-      height: 85%;
-      padding-top: 1rem;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      gap:2rem;
-      span{
-        color:white;
-        opacity: 90%;
-        font-size:2rem;
-        line-height: 2.5rem;
-      }
-    }
-    .bottom-line-about-me {
-      position: absolute;
-      left: -1.5rem;
-      bottom: 0;
-      height: 0.1rem;
-      background-color: white;
-      opacity: 85%;
-    }
-    .about-me-close-button {
-      position: absolute;
-      bottom: 1rem;
-      right: 2rem;
-      background-color: transparent;
-      border: none;
-      color: white;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  width: 40rem;
+  height: 100%;
+  padding-left: 1rem;
+  .about-me-title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .about-me-text {
+    width: 100%;
+    height: 85%;
+    padding-top: 1rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .text-info {
+      text-indent: 1em;
+      color: rgba(255, 255, 255, 0.8);
       font-size: 2rem;
-      cursor: pointer;
+      line-height: 2.5rem;
     }
   }
-  
+  .bottom-line-about-me {
+    position: absolute;
+    left: -1.5rem;
+    bottom: 0;
+    height: 0.1rem;
+    background-color: white;
+    opacity: 85%;
+  }
+  .about-me-close-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}

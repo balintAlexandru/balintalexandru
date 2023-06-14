@@ -107,14 +107,14 @@ export const triggerPersonNavigation = (element) => {
   gsap.fromTo(
     element,
     {
-      x: 0,
+      x: -90,
       opacity: 0,
     },
     {
-      x: 90,
+      x: 40,
       opacity: 1,
       delay: 0.2,
-      duration: 0.2,
+      duration: 0.3,
     }
   );
 };
@@ -127,7 +127,7 @@ export const triggerDeveloperNavigation = (element) => {
       opacity: 0,
     },
     {
-      x: 0,
+      x: -40,
       opacity: 1,
       delay: 0.2,
       duration: 0.3,
@@ -157,7 +157,13 @@ export const triggerSlideInAnimation = (
   );
 };
 
-export const triggerGoDownAnimation = (element, duration, delay, yPoza) => {
+export const triggerVerticalAnimation = (element, duration, delay, yPoz) => {
+  gsap.to(element, { duration: duration, delay: delay, y: yPoz });
+};
+export const triggerScaleAnimation = (element, duration, delay, scale) => {
+  gsap.to(element, { duration: duration, delay: delay, scale });
+};
+export const triggerGoDownAnimation = (element, duration, delay) => {
   gsap.to(element, { duration: duration, delay: delay, y: 150 });
 };
 export const triggerGoUpAnimation = (element, duration, delay) => {
@@ -175,4 +181,29 @@ export const triggerShowScaleAnimation = (element) => {
       scale: 1,
     }
   );
+};
+
+export const triggerShowTransitionScaleAnimation = (element) => {
+  gsap.fromTo(
+    element,
+    0.5,
+    {
+      scale: 0,
+    },
+    {
+      scale: 20,
+      display: "flex",
+    }
+  );
+};
+
+export const triggerHideTransitionScaleAnimation = (element) => {
+  gsap.to(element, 0.7, {
+    scale: 0,
+    display: "none",
+  });
+};
+
+export const triggerShowProjectCard = (element, duration, delay) => {
+  gsap.to(element, { duration: duration, delay: delay, right: "0" });
 };

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import allIcons from "simple-icons";
 import { v4 } from "uuid";
 import { IconCloud } from "react-icon-cloud";
@@ -50,7 +50,7 @@ const ExperienceGlobe = () => {
     document.querySelector("canvas").childNodes.forEach((item, index) => {
       item.addEventListener("click", () => {
         if (cardTitle.innerHTML === "") {
-          triggerGoUpAnimation(".card-wrapper", 0.3, 0);
+          triggerGoUpAnimation(".card-wrapper", 0.2, 0);
           cardImage.src = TECHNOLOGIES_CARD[iconSlugs[index]].icon;
           cardTitle.innerHTML = TECHNOLOGIES_CARD[iconSlugs[index]].name;
           cardText.innerHTML = TECHNOLOGIES_CARD[iconSlugs[index]].text;
@@ -65,6 +65,7 @@ const ExperienceGlobe = () => {
         }
       });
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

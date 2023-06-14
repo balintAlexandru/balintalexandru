@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./TechnologiesStyle.scss";
 
 import { path } from "../../../utils/gsap/constants";
@@ -16,38 +16,38 @@ import TechnologiesCard from "../../../components/TechnologiesCard/TechnologiesC
 
 const Technologies = ({ onClose, setShowDeveloperNavigation }) => {
   const handleClick = () => {
-    triggerShowAnimation(path.developerImage, 0.2);
+    triggerShowAnimation(path.personImage, 0.2);
     setShowDeveloperNavigation(true);
     onClose(false);
   };
 
   useEffect(() => {
-    localStorage.setItem("cardName", " ");
     fadeInShowAnimation(path.technologiesTitle, 1);
     triggerShowScaleAnimation(".globe-wrapper");
     fadeInShowAnimation(path.aboutMeCloseButton, 2);
+    fadeInShowAnimation(".technologies-close-button", 2);
     lineShowAnimation(".bottom-line-technologies", 1);
   }, []);
 
   return (
     <div className="technologies-container">
-      <p className="technologies-title">Technologies</p>
+      <p className="technologies-title">TECHNOLOGIES</p>
       <div className="technologies-globe-wrapper">
         <ExperienceGlobe />
       </div>
       <div className="technologies-bottom-wrapper">
         <div
-          className="about-me-close-button"
+          className="technologies-close-button"
           onClick={() => {
             handleClick();
           }}
         >
-          <MagneticButton title="Close" fontSize="2rem" />
+          <MagneticButton title="🗙" fontSize="2rem" />
         </div>
         <TechnologiesCard />
       </div>
 
-      <dir className="bottom-line-technologies" />
+      <div className="bottom-line-technologies" />
     </div>
   );
 };

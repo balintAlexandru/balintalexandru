@@ -57,7 +57,7 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
 
   return (
     <div className="experience-container">
-      <p className="experience-title">Experience</p>
+      <h1 className="experience-title">EXPERIENCE</h1>
       <div className="experience-text">
         {EXPERIENCE_LIST?.map((item, index) => (
           <div className={`experience-item-container`} key={`item-${index}`}>
@@ -96,11 +96,7 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
           handleClick();
         }}
       >
-        <MagneticButton
-          title="close"
-          fontSize="2rem"
-          setShowDots={setShowDots}
-        />
+        <MagneticButton title="🗙" fontSize="2rem" setShowDots={setShowDots} />
       </div>
     </div>
   );

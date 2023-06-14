@@ -8,14 +8,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  // border: 2px solid red;
   padding-right: 2rem;
   overflow: hidden;
-  p {
-    font-size: 3rem;
-    opacity: 95%;
+  .technologies-title {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
-    color: white;
   }
   .technologies-globe-wrapper {
     width: 100%;
@@ -31,13 +29,12 @@
     right: -0.4rem;
     background-color: white;
     border: none;
-    color: white;
     font-size: 2rem;
     cursor: pointer;
     height: 0.1rem;
     width: 100%;
   }
-  .about-me-close-button {
+  .technologies-close-button {
     padding-bottom: 1rem;
   }
   .technologies-bottom-wrapper {

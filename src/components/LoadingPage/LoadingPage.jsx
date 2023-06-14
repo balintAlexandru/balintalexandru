@@ -4,6 +4,9 @@ import "./LoadingPageStyle.scss";
 import {
   lineShowAnimation,
   triggerHideAnimation,
+  triggerScaleAnimation,
+  triggerShowAnimationDuration,
+  triggerVerticalAnimation,
 } from "../../utils/gsap/animations";
 import { path } from "../../utils/gsap/constants";
 
@@ -23,7 +26,11 @@ const LoadingPage = () => {
             clearInterval(startAnimation);
             loaderRef.current.innerHTML = 100;
             setTimeout(() => {
-              triggerHideAnimation(path.loadingPage, 0.3);
+              triggerHideAnimation(".loading-text", 0.3);
+              triggerVerticalAnimation(".last-name", 0.4, 0.3, -65);
+              triggerVerticalAnimation(".first-name", 0.4, 0.6, 60);
+              triggerScaleAnimation(".loading-page-wrapper", 0.6, 1.5, 0);
+              triggerShowAnimationDuration(".loading-role", 0.6, 2.4);
             }, 700);
           }
         }
@@ -33,12 +40,21 @@ const LoadingPage = () => {
   }, []);
 
   return (
-    <div className="loading-page-wrapper">
-      <p>
-        <span ref={loaderRef}>0</span>%
-      </p>
-      <hr className="loading-line" />
-    </div>
+    <>
+      <div className="loading-page-wrapper">
+        <p className="loading-text">
+          <span ref={loaderRef}>0</span>%
+        </p>
+        <div className="loading-box">
+          <span className="last-name">Alexandru</span>
+        </div>
+        <hr className="loading-line" />
+        <div className="loading-box">
+          <span className="first-name">{`<Balint/>`}</span>
+        </div>
+      </div>
+      <p className="loading-role">{`{ Front-end developer }`}</p>
+    </>
   );
 };
 

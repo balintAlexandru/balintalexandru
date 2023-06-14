@@ -9,23 +9,6 @@ const TechnologiesCard = () => {
     triggerGoDownAnimation(".card-wrapper", 0, 0);
   }, []);
 
-  // useEffect(() => {
-  //   console.log("da");
-  //   function checkUserData() {
-  //     const item = window.localStorage.getItem("cardName");
-  //     console.log(item);
-  //     if (item) {
-  //       setName(item);
-  //     }
-  //   }
-
-  //   window.addEventListener("storage", checkUserData);
-
-  //   return () => {
-  //     window.removeEventListener("storage", checkUserData);
-  //   };
-  // }, [window.localStorage]);
-
   return (
     <div className="card-wrapper">
       <div className="card-row-1">

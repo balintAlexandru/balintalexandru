@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   position: relative;
+  display: none;
+  opacity: 0;
   .person-wrapper {
     position: absolute;
     left: -0.5rem;

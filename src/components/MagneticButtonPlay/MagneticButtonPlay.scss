@@ -1,0 +1,55 @@
+.wrapper-created-play {
+  .btn-click-created {
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    min-width: 2em;
+    padding: 0;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    will-change: transform;
+    outline: 0;
+    transform: translateZ(0) rotate(0.001deg);
+  }
+
+  .btn-click-created:hover {
+    cursor: pointer;
+  }
+
+  .btn-text-created-play {
+    border-radius: 50%;
+    text-align: center;
+    background-color: #456fc2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    z-index: 2;
+    color: dark;
+    font-weight: 500;
+    line-height: 26px;
+    position: relative;
+    transform: rotate(0.001deg);
+    pointer-events: none;
+    will-change: transform, color;
+  }
+
+  .btn-click-created:hover {
+    text-decoration: none;
+  }
+
+  .btn-click-created .btn-text-inner-created {
+    transition: all 0.7s cubic-bezier(0.7, 0, 0.3, 1);
+  }
+
+  .btn-click-created {
+    transform: translate3d(0, 0%, 0);
+  }
+}

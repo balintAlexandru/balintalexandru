@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import Image from "./Image/Image";
 import "./ContentStyle.scss";
-import { triggerXPozAnimation } from "../../utils/gsap/animations";
+import {
+  triggerShowAnimation,
+  triggerXPozAnimation,
+} from "../../utils/gsap/animations";
 import person from "../../../src/assets/images/person.png";
 import developer from "../../../src/assets/images/developer.png";
 import MagneticPerson from "../../components/MagneticPerson/MagneticPerson";
@@ -14,6 +17,7 @@ import AboutMe from "./AboutMe/AboutMe";
 import { path } from "../../utils/gsap/constants";
 import TransitionOut from "../../components/TransitionOut/TransitionOut";
 import Technologies from "./Technologies/Technologies";
+import Projects from "./Projects/Projects";
 
 const Content = () => {
   const [showCursorDelay, setShowCursorDelay] = useState(false);
@@ -24,11 +28,14 @@ const Content = () => {
   const [selectedExperience, setSelectedExperience] = useState(false);
   const [selectedAboutMe, setSelectedAboutMe] = useState(false);
   const [selectedTechnologies, setSelectedTechnologies] = useState(false);
+  const [selectedProjects, setSelectedProjects] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setShowCursorDelay(true);
     }, 200);
+
+    triggerShowAnimation(".content-wrapper", 1.5, 7);
   }, []);
 
   return (
@@ -38,27 +45,37 @@ const Content = () => {
         <div
           className="person-wrapper"
           onClick={() => {
-            if (isDeveloperOpen) {
-              triggerXPozAnimation(path.personImage, -90, 0, 1, 1, 0, 0.5);
-              triggerXPozAnimation(path.developerTabs, 0, 0, 1, 0, 0.1, 0.2);
-              triggerXPozAnimation(path.developerImage, 0, 90, 1, 1, 0.5, 0.5);
-              setTimeout(() => {
-                setShowDeveloperNavigation(false);
+            if (!selectedExperience && !selectedAboutMe) {
+              if (isDeveloperOpen) {
+                triggerXPozAnimation(path.personImage, -80, 0, 1, 1, 0, 0.5);
+                triggerXPozAnimation(path.developerTabs, -40, 90, 1, 0, 0.1, 1);
+                triggerXPozAnimation(
+                  path.developerImage,
+                  0,
+                  80,
+                  1,
+                  1,
+                  0.5,
+                  0.5
+                );
+                setTimeout(() => {
+                  setShowDeveloperNavigation(false);
+                  setShowPersonNavigation(true);
+                }, 500);
+                setIsPersonOpen(true);
+                setIsDeveloperOpen(false);
+              } else if (isPersonOpen) {
+                triggerXPozAnimation(path.developerImage, 80, 0, 1, 1, 0, 0.5);
+                triggerXPozAnimation(path.personTabs, 40, -90, 1, 0, 0.1, 1);
+                setTimeout(() => {
+                  setShowPersonNavigation(false);
+                }, 500);
+                setIsPersonOpen(false);
+              } else {
+                triggerXPozAnimation(path.developerImage, 0, 80, 1, 1, 0, 0.5);
+                setIsPersonOpen(true);
                 setShowPersonNavigation(true);
-              }, 500);
-              setIsPersonOpen(true);
-              setIsDeveloperOpen(false);
-            } else if (isPersonOpen) {
-              triggerXPozAnimation(path.developerImage, 90, 0, 1, 1, 0, 0.5);
-              triggerXPozAnimation(path.personTabs, 90, 90, 1, 0, 0.1, 0.2);
-              setTimeout(() => {
-                setShowPersonNavigation(false);
-              }, 500);
-              setIsPersonOpen(false);
-            } else {
-              triggerXPozAnimation(path.developerImage, 0, 90, 1, 1, 0, 0.5);
-              setIsPersonOpen(true);
-              setShowPersonNavigation(true);
+              }
             }
           }}
         >
@@ -76,6 +93,7 @@ const Content = () => {
         )}
         {showDeveloperNavigation && (
           <DeveloperNavigation
+            projects={setSelectedProjects}
             technologies={setSelectedTechnologies}
             setShowDeveloperNavigation={setShowDeveloperNavigation}
           />
@@ -84,27 +102,29 @@ const Content = () => {
         <div
           className="developer-wrapper"
           onClick={() => {
-            if (isPersonOpen) {
-              triggerXPozAnimation(path.developerImage, 90, 0, 1, 1, 0, 0.5);
-              triggerXPozAnimation(path.personTabs, 90, 90, 1, 0, 0.1, 0.2);
-              triggerXPozAnimation(path.personImage, 0, -90, 1, 1, 0.5, 0.5);
-              setTimeout(() => {
-                setShowPersonNavigation(false);
+            if (!selectedTechnologies && !selectedProjects) {
+              if (isPersonOpen) {
+                triggerXPozAnimation(path.developerImage, 80, 0, 1, 1, 0, 0.5);
+                triggerXPozAnimation(path.personTabs, 40, -90, 1, 0, 0.1, 1);
+                triggerXPozAnimation(path.personImage, 0, -80, 1, 1, 0.5, 0.5);
+                setTimeout(() => {
+                  setShowPersonNavigation(false);
+                  setShowDeveloperNavigation(true);
+                }, 500);
+                setIsPersonOpen(false);
+                setIsDeveloperOpen(true);
+              } else if (isDeveloperOpen) {
+                triggerXPozAnimation(path.personImage, -80, 0, 1, 1, 0, 0.5);
+                triggerXPozAnimation(path.developerTabs, -40, 90, 1, 0, 0.1, 1);
+                setTimeout(() => {
+                  setShowDeveloperNavigation(false);
+                }, 500);
+                setIsDeveloperOpen(false);
+              } else {
+                triggerXPozAnimation(path.personImage, 0, -80, 1, 1, 0, 0.5);
+                setIsDeveloperOpen(true);
                 setShowDeveloperNavigation(true);
-              }, 500);
-              setIsPersonOpen(false);
-              setIsDeveloperOpen(true);
-            } else if (isDeveloperOpen) {
-              triggerXPozAnimation(path.personImage, -90, 0, 1, 1, 0, 0.5);
-              triggerXPozAnimation(path.developerTabs, 0, 0, 1, 0, 0.1, 0.1);
-              setTimeout(() => {
-                setShowDeveloperNavigation(false);
-              }, 500);
-              setIsDeveloperOpen(false);
-            } else {
-              triggerXPozAnimation(path.personImage, 0, -90, 1, 1, 0, 0.5);
-              setIsDeveloperOpen(true);
-              setShowDeveloperNavigation(true);
+              }
             }
           }}
         >
@@ -132,6 +152,15 @@ const Content = () => {
           <div className="developer-person-content">
             <Technologies
               onClose={setSelectedTechnologies}
+              setShowDeveloperNavigation={setShowDeveloperNavigation}
+            />
+          </div>
+        )}
+
+        {selectedProjects && (
+          <div className="developer-person-content">
+            <Projects
+              onClose={setSelectedProjects}
               setShowDeveloperNavigation={setShowDeveloperNavigation}
             />
           </div>

@@ -6,9 +6,9 @@ import { triggerSlideInAnimation } from "../../../utils/gsap/animations";
 import { path } from "../../../utils/gsap/constants";
 
 const Footer = () => {
-  useEffect(()=>{
-    triggerSlideInAnimation(path.layoutFooter, 90, 0 , 0.5, 3);
-  },[])
+  useEffect(() => {
+    triggerSlideInAnimation(path.layoutFooter, 90, 0, 0.5, 6.8);
+  }, []);
 
   return (
     <footer>
@@ -33,7 +33,7 @@ const Footer = () => {
           }}
         />
       </div>
-      <MagneticButton title="Get in touch" fontSize="1.6rem"/>
+      <MagneticButton title="Get in touch" fontSize="1.6rem" />
     </footer>
   );
 };

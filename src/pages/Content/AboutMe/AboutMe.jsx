@@ -20,17 +20,21 @@ const AboutMe = ({ onClose, setShowPersonNavigation }) => {
 
   useEffect(() => {
     fadeInShowAnimation(path.aboutMeTitle, 1);
-    fadeInShowAnimation(path.aboutMeText, 1);
     fadeInShowAnimation(path.aboutMeCloseButton, 2);
     lineShowAnimation(path.aboutMeBottomLine, 1);
+    document.querySelectorAll(".text-info").forEach((element, index) => {
+      fadeInShowAnimation(element, 2, index * 0.5);
+    });
   }, []);
 
   return (
     <div className="about-me-container">
-      <p className="about-me-title">About me</p>
+      <h1 className="about-me-title">ABOUT ME</h1>
       <div className="about-me-text">
-        {textContent.aboutMe?.map((content) => (
-          <span>{content.text}</span>
+        {textContent.aboutMe?.map((content, index) => (
+          <span key={`text-${index}`} className="text-info">
+            {content.text}
+          </span>
         ))}
       </div>
       <dir className="bottom-line-about-me" />
@@ -40,7 +44,7 @@ const AboutMe = ({ onClose, setShowPersonNavigation }) => {
           handleClick();
         }}
       >
-         <MagneticButton title="Close" fontSize="2rem"/>
+        <MagneticButton title="🗙" fontSize="2rem" />
       </div>
     </div>
   );

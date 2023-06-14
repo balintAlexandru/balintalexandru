@@ -16,10 +16,14 @@
   height: 100%;
   left: 0;
   will-change: top;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .loading-screen,
 .loading-container .rounded-div-wrap.bottom .rounded-div {
-  background: #141516;
+  background: rgb(19, 18, 18);
 }
 .loading-container .rounded-div-wrap.bottom .rounded-div {
   height: 745%;

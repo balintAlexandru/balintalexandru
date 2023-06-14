@@ -7,7 +7,11 @@ import {
   triggerShowAnimation,
 } from "../../../utils/gsap/animations";
 
-const DeveloperNavigation = ({ technologies, setShowDeveloperNavigation }) => {
+const DeveloperNavigation = ({
+  projects,
+  technologies,
+  setShowDeveloperNavigation,
+}) => {
   const tabsModel = [
     {
       name: "Projects",
@@ -22,7 +26,7 @@ const DeveloperNavigation = ({ technologies, setShowDeveloperNavigation }) => {
     setShowDeveloperNavigation(false);
     triggerShowAnimation(path.developerPersonWrapper, 0);
     if (name === "Projects") {
-      // projects(true)
+      projects(true);
     } else {
       technologies(true);
     }
