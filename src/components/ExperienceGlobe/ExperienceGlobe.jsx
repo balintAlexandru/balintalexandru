@@ -18,7 +18,7 @@ const ExperienceGlobe = () => {
     initial: [0.1, -0.1],
     outlineColour: "#0000",
     reverse: true,
-    tooltip: "null", // null | 'div', 'native'
+    tooltip: null, // null | 'div', 'native'
     tooltipDelay: 0,
     wheelZoom: false,
   };

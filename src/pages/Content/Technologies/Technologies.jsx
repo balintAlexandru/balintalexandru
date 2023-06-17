@@ -31,7 +31,7 @@ const Technologies = ({ onClose, setShowDeveloperNavigation }) => {
 
   return (
     <div className="technologies-container">
-      <p className="technologies-title">TECHNOLOGIES</p>
+      <p className="technologies-title">{`< TECHNOLOGIES />`}</p>
       <div className="technologies-globe-wrapper">
         <ExperienceGlobe />
       </div>

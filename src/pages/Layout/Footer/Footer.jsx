@@ -1,11 +1,14 @@
-import "./FooterStyle.scss";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
-import MagneticButton from "../../../components/MagneticButton/MagneticButton";
 import { useEffect } from "react";
+
+import "./FooterStyle.scss";
+
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+
+import MagneticButton from "../../../components/MagneticButton/MagneticButton";
 import { triggerSlideInAnimation } from "../../../utils/gsap/animations";
 import { path } from "../../../utils/gsap/constants";
 
-const Footer = () => {
+const Footer = ({ setTriggerContactAnimation }) => {
   useEffect(() => {
     triggerSlideInAnimation(path.layoutFooter, 90, 0, 0.5, 6.8);
   }, []);
@@ -33,7 +36,13 @@ const Footer = () => {
           }}
         />
       </div>
-      <MagneticButton title="Get in touch" fontSize="1.6rem" />
+      <MagneticButton
+        title="Get in touch"
+        fontSize="1.6rem"
+        click={() => {
+          setTriggerContactAnimation(true);
+        }}
+      />
     </footer>
   );
 };

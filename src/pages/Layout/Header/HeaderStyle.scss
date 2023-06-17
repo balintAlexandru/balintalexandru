@@ -1,29 +1,29 @@
-header{
-    width: 100%;
-    .header-text-wrapper{
-        .header-name-wrapper{
-            display: flex;
-            gap:1.2rem;
-            .header-lastName{
-                font-size:3rem;
-                color:#456fc2;
-                font-weight:600;
-                cursor: default;
-            }
-            .header-firstName{
-                font-size:3rem;
-                color:#b85b5b;
-                font-weight:600;
-                cursor: default;
-            }
-        }
-        .header-secondary{
-            font-size:2rem;
-            color:white;
-            opacity: 80%;
-            font-weight:400;
-            cursor: default;
-        }
+header {
+  width: 100%;
+  z-index: 0;
+  .header-text-wrapper {
+    .header-name-wrapper {
+      display: flex;
+      gap: 1.2rem;
+      .header-lastName {
+        font-size: 3rem;
+        color: #456fc2;
+        font-weight: 600;
+        cursor: default;
+      }
+      .header-firstName {
+        font-size: 3rem;
+        color: #b85b5b;
+        font-weight: 600;
+        cursor: default;
+      }
     }
-   
+    .header-secondary {
+      font-size: 2rem;
+      color: white;
+      opacity: 80%;
+      font-weight: 400;
+      cursor: default;
+    }
+  }
 }

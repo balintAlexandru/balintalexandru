@@ -58,16 +58,6 @@ function transitionOut() {
     "=-.8"
   );
 
-  tl.to(
-    ".loading-words",
-    {
-      duration: 0.3,
-      opacity: 0,
-      ease: "linear",
-    },
-    "=-.8"
-  );
-
   tl.set(".loading-screen", {
     top: "calc(-100%)",
   });

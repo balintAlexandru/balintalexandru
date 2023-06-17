@@ -5,8 +5,8 @@ import {
   triggerShowAnimation,
   triggerXPozAnimation,
 } from "../../utils/gsap/animations";
-import person from "../../../src/assets/images/person.png";
-import developer from "../../../src/assets/images/developer.png";
+import person from "../../../src/assets/images/person.webp";
+import developer from "../../../src/assets/images/developer.webp";
 import MagneticPerson from "../../components/MagneticPerson/MagneticPerson";
 import MagneticDeveloper from "../../components/MagneticDeveloper/MagneticDeveloper";
 import DeveloperNavigation from "./DeveloperNavigation/DeveloperNavigation";
@@ -15,7 +15,7 @@ import Experience from "./Experience/Experience";
 import AboutMe from "./AboutMe/AboutMe";
 
 import { path } from "../../utils/gsap/constants";
-import TransitionOut from "../../components/TransitionOut/TransitionOut";
+
 import Technologies from "./Technologies/Technologies";
 import Projects from "./Projects/Projects";
 
@@ -40,7 +40,6 @@ const Content = () => {
 
   return (
     <>
-      <TransitionOut />
       <div className="content-wrapper">
         <div
           className="person-wrapper"

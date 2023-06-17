@@ -73,7 +73,7 @@ const Projects = ({ onClose, setShowDeveloperNavigation }) => {
 
   return (
     <div className="projects-container">
-      <p className="projects-title">PROJECTS</p>
+      <p className="projects-title">{`< PROJECTS />`}</p>
       <div className="projects-list-wrapper">
         {PROJECTS?.map((project, index) => (
           <ProjectCard

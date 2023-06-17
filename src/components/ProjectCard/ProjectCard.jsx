@@ -45,7 +45,7 @@ const ProjectCard = ({ index, project, setCurrentProject }) => {
 
   return (
     <article className={`project-card card-${index}`}>
-      <div class="content">
+      <div className="content">
         <h2>{project.name}</h2>
 
         <div className="technologies-wrapper">

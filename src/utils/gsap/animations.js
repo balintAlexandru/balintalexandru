@@ -90,7 +90,7 @@ export const fadeInShowAnimation = (element, duration, delay) => {
   );
 };
 
-export const lineShowAnimation = (element, duration) => {
+export const lineShowAnimation = (element, duration, delay) => {
   gsap.fromTo(
     element,
     {
@@ -99,6 +99,7 @@ export const lineShowAnimation = (element, duration) => {
     {
       width: "100%",
       duration: duration,
+      delay: delay || 0,
     }
   );
 };
