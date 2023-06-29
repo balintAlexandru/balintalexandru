@@ -10,10 +10,16 @@
   align-items: flex-end;
   padding-right: 2rem;
   overflow: hidden;
+  @media only screen and (min-width: 3840px) {
+    width: 80rem;
+  }
   .technologies-title {
     font-size: 4rem;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
+    @media only screen and (min-width: 3840px) {
+      font-size: 7rem;
+    }
   }
   .technologies-globe-wrapper {
     width: 100%;
@@ -22,6 +28,9 @@
     justify-content: center;
     align-items: center;
     margin-right: 2rem;
+    @media only screen and (min-width: 3840px) {
+      margin-right: 6rem;
+    }
   }
   .bottom-line-technologies {
     position: absolute;
@@ -36,6 +45,9 @@
   }
   .technologies-close-button {
     padding-bottom: 1rem;
+    @media only screen and (min-width: 3840px) {
+      padding-bottom: 4rem;
+    }
   }
   .technologies-bottom-wrapper {
     position: relative;

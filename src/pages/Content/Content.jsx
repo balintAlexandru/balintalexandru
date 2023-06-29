@@ -38,6 +38,44 @@ const Content = () => {
     triggerShowAnimation(".content-wrapper", 1.5, 7);
   }, []);
 
+  const personMove = () => {
+    const width = window.innerWidth;
+    if (width >= 3840) {
+      return -120;
+    } else if (width >= 2880 && width <= 3840) {
+      return -110;
+    } else if (width >= 2304 && width <= 2560) {
+      return -105;
+    } else if (width >= 1366 && width <= 1440) {
+      return -60;
+    } else if (width >= 1024 && width <= 1280) {
+      return -50;
+    } else if (width >= 800 && width <= 1000) {
+      return -40;
+    } else {
+      return -80;
+    }
+  };
+
+  const developerMove = () => {
+    const width = window.innerWidth;
+    if (width >= 3840) {
+      return 120;
+    } else if (width >= 2880 && width <= 3840) {
+      return 110;
+    } else if (width >= 2304 && width <= 2560) {
+      return 105;
+    } else if (width >= 1366 && width <= 1440) {
+      return 60;
+    } else if (width >= 1024 && width <= 1280) {
+      return 50;
+    } else if (width >= 800 && width <= 1000) {
+      return 40;
+    } else {
+      return 80;
+    }
+  };
+
   return (
     <>
       <div className="content-wrapper">
@@ -46,12 +84,20 @@ const Content = () => {
           onClick={() => {
             if (!selectedExperience && !selectedAboutMe) {
               if (isDeveloperOpen) {
-                triggerXPozAnimation(path.personImage, -80, 0, 1, 1, 0, 0.5);
+                triggerXPozAnimation(
+                  path.personImage,
+                  personMove(),
+                  0,
+                  1,
+                  1,
+                  0,
+                  0.5
+                );
                 triggerXPozAnimation(path.developerTabs, -40, 90, 1, 0, 0.1, 1);
                 triggerXPozAnimation(
                   path.developerImage,
                   0,
-                  80,
+                  developerMove(),
                   1,
                   1,
                   0.5,
@@ -64,14 +110,30 @@ const Content = () => {
                 setIsPersonOpen(true);
                 setIsDeveloperOpen(false);
               } else if (isPersonOpen) {
-                triggerXPozAnimation(path.developerImage, 80, 0, 1, 1, 0, 0.5);
+                triggerXPozAnimation(
+                  path.developerImage,
+                  developerMove(),
+                  0,
+                  1,
+                  1,
+                  0,
+                  0.5
+                );
                 triggerXPozAnimation(path.personTabs, 40, -90, 1, 0, 0.1, 1);
                 setTimeout(() => {
                   setShowPersonNavigation(false);
                 }, 500);
                 setIsPersonOpen(false);
               } else {
-                triggerXPozAnimation(path.developerImage, 0, 80, 1, 1, 0, 0.5);
+                triggerXPozAnimation(
+                  path.developerImage,
+                  0,
+                  developerMove(),
+                  1,
+                  1,
+                  0,
+                  0.5
+                );
                 setIsPersonOpen(true);
                 setShowPersonNavigation(true);
               }
@@ -103,9 +165,25 @@ const Content = () => {
           onClick={() => {
             if (!selectedTechnologies && !selectedProjects) {
               if (isPersonOpen) {
-                triggerXPozAnimation(path.developerImage, 80, 0, 1, 1, 0, 0.5);
+                triggerXPozAnimation(
+                  path.developerImage,
+                  developerMove(),
+                  0,
+                  1,
+                  1,
+                  0,
+                  0.5
+                );
                 triggerXPozAnimation(path.personTabs, 40, -90, 1, 0, 0.1, 1);
-                triggerXPozAnimation(path.personImage, 0, -80, 1, 1, 0.5, 0.5);
+                triggerXPozAnimation(
+                  path.personImage,
+                  0,
+                  personMove(),
+                  1,
+                  1,
+                  0.5,
+                  0.5
+                );
                 setTimeout(() => {
                   setShowPersonNavigation(false);
                   setShowDeveloperNavigation(true);
@@ -113,14 +191,30 @@ const Content = () => {
                 setIsPersonOpen(false);
                 setIsDeveloperOpen(true);
               } else if (isDeveloperOpen) {
-                triggerXPozAnimation(path.personImage, -80, 0, 1, 1, 0, 0.5);
+                triggerXPozAnimation(
+                  path.personImage,
+                  personMove(),
+                  0,
+                  1,
+                  1,
+                  0,
+                  0.5
+                );
                 triggerXPozAnimation(path.developerTabs, -40, 90, 1, 0, 0.1, 1);
                 setTimeout(() => {
                   setShowDeveloperNavigation(false);
                 }, 500);
                 setIsDeveloperOpen(false);
               } else {
-                triggerXPozAnimation(path.personImage, 0, -80, 1, 1, 0, 0.5);
+                triggerXPozAnimation(
+                  path.personImage,
+                  0,
+                  personMove(),
+                  1,
+                  1,
+                  0,
+                  0.5
+                );
                 setIsDeveloperOpen(true);
                 setShowDeveloperNavigation(true);
               }

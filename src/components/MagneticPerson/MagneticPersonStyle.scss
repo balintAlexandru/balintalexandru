@@ -1,61 +1,100 @@
 .cursor-delay-wrapper {
-    .mouse-pos-person-btn,
-    .mouse-pos-person-span {
-      width: 0;
-      height: 0;
-      border-radius: 50%;
-      border: 0;
-      background: #334bd3;
-      position: fixed;
-      z-index: 26;
-      pointer-events: none;
-      transform: translate(-50%, -60%);
-      overflow: hidden;
-      display: block;
-      transition: width 0.4s cubic-bezier(0.36, 0, 0.66, 0),
-        height 0.4s cubic-bezier(0.36, 0, 0.66, 0);
-      will-change: transform, width, height;
+  .mouse-pos-person-btn,
+  .mouse-pos-person-span {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    border: 0;
+    background: #334bd3;
+    position: fixed;
+    z-index: 26;
+    pointer-events: none;
+    transform: translate(-50%, -60%);
+    overflow: hidden;
+    display: block;
+    transition: width 0.4s cubic-bezier(0.36, 0, 0.66, 0),
+      height 0.4s cubic-bezier(0.36, 0, 0.66, 0);
+    will-change: transform, width, height;
+  }
+
+  .mouse-pos-person-span {
+    background: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mouse-pos-person-span p {
+    margin: 0;
+  }
+
+  .mouse-pos-person-span p {
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+    transition: font-size 0.4s cubic-bezier(0.36, 0, 0.66, 0);
+    will-change: font-size;
+    font-weight: 600;
+    @media only screen and (min-width: 800px) and (max-width: 1000px) {
+      font-size: 1.4rem;
     }
-  
-    .mouse-pos-person-span {
-      background: transparent;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+      font-size: 4rem;
     }
-  
-    .mouse-pos-person-span p {
-      margin: 0;
+    @media only screen and (min-width: 2880px) {
+      font-size: 5rem;
     }
-  
-    .mouse-pos-person-span p {
-      font-size: 2.4rem;
-      letter-spacing: 0.2rem;
-      transition: font-size 0.4s cubic-bezier(0.36, 0, 0.66, 0);
-      will-change: font-size;
-      font-weight: 600;
-    }
-  
-    .mouse-pos-person-span.active p {
-      font-size: 2.4rem;
-      letter-spacing: 0.2rem;
-      transition: font-size 0.4s cubic-bezier(0.34, 1, 0.64, 1);
-      font-weight: 600;
-    }
-  
-    @media screen and (max-width: 540px) {
-      .mouse-pos-person-btn,
-      .mouse-pos-person-span {
-        display: none;
-      }
-    }
-  
-    .active-btn {
-      width: clamp(3.75em, 5.5vw, 5em);
-      height: clamp(3.75em, 5.5vw, 5em);
-      transition: width 0.4s cubic-bezier(0.34, 1, 0.64, 1),
-        height 0.4s cubic-bezier(0.34, 1, 0.64, 1);
+    @media only screen and (min-width: 3840px) {
+      font-size: 7rem;
     }
   }
-  
+
+  .mouse-pos-person-span.active p {
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+    transition: font-size 0.4s cubic-bezier(0.34, 1, 0.64, 1);
+    font-weight: 600;
+    @media only screen and (min-width: 800px) and (max-width: 1000px) {
+      font-size: 1.4rem;
+    }
+    @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+      font-size: 4rem;
+    }
+    @media only screen and (min-width: 2880px) {
+      font-size: 5rem;
+    }
+    @media only screen and (min-width: 3840px) {
+      font-size: 7rem;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .mouse-pos-person-btn,
+    .mouse-pos-person-span {
+      display: none;
+    }
+  }
+
+  .active-btn {
+    width: clamp(3.75em, 5.5vw, 5em);
+    height: clamp(3.75em, 5.5vw, 5em);
+    @media only screen and (min-width: 800px) and (max-width: 1000px) {
+      width: 12rem !important;
+      height: 12rem !important;
+    }
+    @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+      width: 28rem !important;
+      height: 28rem !important;
+    }
+    @media only screen and (min-width: 2880px) {
+      width: 30rem !important;
+      height: 30rem !important;
+    }
+    @media only screen and (min-width: 3840px) {
+      width: 42rem !important;
+      height: 42rem !important;
+    }
+    transition: width 0.4s cubic-bezier(0.34, 1, 0.64, 1),
+      height 0.4s cubic-bezier(0.34, 1, 0.64, 1);
+  }
+}

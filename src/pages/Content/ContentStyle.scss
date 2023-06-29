@@ -6,6 +6,30 @@
   position: relative;
   display: none;
   opacity: 0;
+  @media only screen and (min-width: 800px) and (max-width: 1000px) {
+    min-width: 28rem;
+    height: 35rem;
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    min-width: 45rem;
+    height: 55rem;
+  }
+  @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+    min-width: 49rem;
+    height: 60rem;
+  }
+  @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+    min-width: 80rem;
+    height: 100rem;
+  }
+  @media only screen and (min-width: 2880px) {
+    min-width: 95rem;
+    height: 120rem;
+  }
+  @media only screen and (min-width: 3840px) {
+    min-width: 120rem;
+    height: 150rem;
+  }
   .person-wrapper {
     position: absolute;
     left: -0.5rem;
@@ -55,6 +79,11 @@
     border-radius: 2rem;
     padding: 3rem;
     background: white;
+    @media only screen and (min-width: 3840px) {
+      width: 50rem;
+      left: -65rem;
+      height: 20rem;
+    }
     .line-1 {
       font-size: 2rem;
       text-align: left;
@@ -64,6 +93,9 @@
       color: black;
       width: 33rem;
       font-weight: 600;
+      @media only screen and (min-width: 3840px) {
+        font-size: 3rem;
+      }
     }
     /* Animation */
     .anim-typewriter {

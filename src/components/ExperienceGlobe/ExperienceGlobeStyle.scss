@@ -1,4 +1,8 @@
 .globe-wrapper {
   width: 50rem;
   height: 50rem;
+  @media only screen and (min-width: 3840px) {
+    width: 80rem;
+    height: 80rem;
+  }
 }

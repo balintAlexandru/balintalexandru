@@ -5,10 +5,17 @@
   width: 40rem;
   height: 100%;
   padding-left: 1rem;
+  @media only screen and (min-width: 3840px) {
+    width: 80rem;
+    padding-left: 3rem;
+  }
   .about-me-title {
     font-size: 4rem;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.9);
+    @media only screen and (min-width: 3840px) {
+      font-size: 7rem;
+    }
   }
   .about-me-text {
     width: 100%;
@@ -23,6 +30,10 @@
       color: rgba(255, 255, 255, 0.8);
       font-size: 2rem;
       line-height: 2.5rem;
+      @media only screen and (min-width: 3840px) {
+        font-size: 4rem;
+        line-height: 4.5rem;
+      }
     }
   }
   .bottom-line-about-me {
@@ -42,5 +53,8 @@
     color: white;
     font-size: 2rem;
     cursor: pointer;
+    @media only screen and (min-width: 3840px) {
+      bottom: 3rem;
+    }
   }
 }

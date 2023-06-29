@@ -39,6 +39,10 @@
     transform: rotate(0.001deg);
     pointer-events: none;
     will-change: transform, color;
+    @media only screen and (min-width: 3840px) {
+      width: 8rem;
+      height: 8rem;
+    }
   }
 
   .btn-click-created:hover {

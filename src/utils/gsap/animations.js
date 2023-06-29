@@ -158,6 +158,15 @@ export const triggerSlideInAnimation = (
   );
 };
 
+const currentYPoz = () => {
+  const width = window.innerWidth;
+  if (width >= 3840) {
+    return 250;
+  } else {
+    return 150;
+  }
+};
+
 export const triggerVerticalAnimation = (element, duration, delay, yPoz) => {
   gsap.to(element, { duration: duration, delay: delay, y: yPoz });
 };
@@ -165,7 +174,7 @@ export const triggerScaleAnimation = (element, duration, delay, scale) => {
   gsap.to(element, { duration: duration, delay: delay, scale });
 };
 export const triggerGoDownAnimation = (element, duration, delay) => {
-  gsap.to(element, { duration: duration, delay: delay, y: 150 });
+  gsap.to(element, { duration: duration, delay: delay, y: currentYPoz() });
 };
 export const triggerGoUpAnimation = (element, duration, delay) => {
   gsap.to(element, { duration: duration, delay: delay, y: 0 });
@@ -184,6 +193,15 @@ export const triggerShowScaleAnimation = (element) => {
   );
 };
 
+const currentScale = () => {
+  const width = window.innerWidth;
+  if (width >= 3840) {
+    return 11;
+  } else {
+    return 20;
+  }
+};
+
 export const triggerShowTransitionScaleAnimation = (element) => {
   gsap.fromTo(
     element,
@@ -192,7 +210,7 @@ export const triggerShowTransitionScaleAnimation = (element) => {
       scale: 0,
     },
     {
-      scale: 20,
+      scale: currentScale(),
       display: "flex",
     }
   );

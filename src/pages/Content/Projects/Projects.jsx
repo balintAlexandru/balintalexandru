@@ -54,6 +54,15 @@ const Projects = ({ onClose, setShowDeveloperNavigation }) => {
     onClose(false);
   };
 
+  const iconSize = () => {
+    const width = window.innerWidth;
+    if (width >= 3840) {
+      return "5rem";
+    } else {
+      return "2rem";
+    }
+  };
+
   useEffect(() => {
     fadeInShowAnimation(".projects-title", 1);
     fadeInShowAnimation(path.aboutMeCloseButton, 2);
@@ -93,7 +102,7 @@ const Projects = ({ onClose, setShowDeveloperNavigation }) => {
             right: "2.5rem",
             cursor: "pointer",
             color: "white",
-            fontSize: "2.5rem",
+            fontSize: iconSize(),
           }}
           size="2.5rem"
           color="white"
@@ -152,7 +161,7 @@ const Projects = ({ onClose, setShowDeveloperNavigation }) => {
             <div className="button-play-wrapper">
               <MagneticButtonPlay
                 title="▶"
-                fontSize="2rem"
+                fontSize={iconSize()}
                 click={handlePlay}
               />
             </div>
@@ -169,7 +178,7 @@ const Projects = ({ onClose, setShowDeveloperNavigation }) => {
           handleClick();
         }}
       >
-        <MagneticButton title="🗙" fontSize="2rem" />
+        <MagneticButton title="🗙" fontSize={iconSize()} />
       </div>
 
       <div className="bottom-line-projects" />

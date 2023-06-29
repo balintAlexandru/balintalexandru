@@ -26,9 +26,49 @@ const ContactForm = ({ click, setTriggerContactAnimation }) => {
 
   const form = useRef();
 
+  const currenHeight = () => {
+    const width = window.innerWidth;
+    if (width >= 3840) {
+      return "6.4rem";
+    } else {
+      return "4.5rem";
+    }
+  };
+
+  const currentScaleCircle = () => {
+    const width = window.innerWidth;
+    if (width >= 3840) {
+      return 2;
+    } else {
+      return 1;
+    }
+  };
+
+  const textAreaAdjust = () => {
+    if (document.querySelector("textarea").value.length < 160) {
+      document.querySelector("textarea").style.height = currenHeight();
+      document.querySelector("textarea").style.height =
+        1.2 + document.querySelector("textarea").scrollHeight + "px";
+    }
+  };
+
+  const verticalAnimationSize = () => {
+    const width = window.innerWidth;
+    if (width >= 3840) {
+      return 70;
+    } else {
+      return 0;
+    }
+  };
+
   const showMessage = () => {
     triggerVerticalAnimation(".message-wrapper", 0.3, 0, -110);
-    triggerVerticalAnimation(".message-wrapper", 0.3, 1.5, 0);
+    triggerVerticalAnimation(
+      ".message-wrapper",
+      0.3,
+      1.5,
+      verticalAnimationSize()
+    );
   };
 
   const sendEmail = (e) => {
@@ -45,7 +85,6 @@ const ContactForm = ({ click, setTriggerContactAnimation }) => {
       });
       showMessage();
     } else if (localStorage.getItem("messageSent") === "true") {
-      console.log("daaaaaa");
       setMessageModel({
         text: "Email sent recently, try again in 5 minutes",
         color: "#a12020",
@@ -94,17 +133,9 @@ const ContactForm = ({ click, setTriggerContactAnimation }) => {
     }
   };
 
-  const textAreaAdjust = () => {
-    if (document.querySelector("textarea").value.length < 160) {
-      document.querySelector("textarea").style.height = "4.5rem";
-      document.querySelector("textarea").style.height =
-        1.2 + document.querySelector("textarea").scrollHeight + "px";
-    }
-  };
-
   useEffect(() => {
-    triggerScaleAnimation(".circle-large", 1, 0.5, 1);
-    triggerScaleAnimation(".circle-small", 1, 0.5, 1);
+    triggerScaleAnimation(".circle-large", 1, 0.5, currentScaleCircle());
+    triggerScaleAnimation(".circle-small", 1, 0.5, currentScaleCircle());
     lineShowAnimation(".contact-line", 1, 0.5);
     triggerShowAnimation(".contact-message", 1.2, 0.8);
     triggerShowAnimation(".contact-title", 1.2, 0.8);

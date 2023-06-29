@@ -21,6 +21,15 @@ const Technologies = ({ onClose, setShowDeveloperNavigation }) => {
     onClose(false);
   };
 
+  const iconSize = () => {
+    const width = window.innerWidth;
+    if (width >= 3840) {
+      return "5rem";
+    } else {
+      return "2rem";
+    }
+  };
+
   useEffect(() => {
     fadeInShowAnimation(path.technologiesTitle, 1);
     triggerShowScaleAnimation(".globe-wrapper");
@@ -42,7 +51,7 @@ const Technologies = ({ onClose, setShowDeveloperNavigation }) => {
             handleClick();
           }}
         >
-          <MagneticButton title="🗙" fontSize="2rem" />
+          <MagneticButton title="🗙" fontSize={iconSize()} />
         </div>
         <TechnologiesCard />
       </div>

@@ -4,6 +4,10 @@
   transform: rotate(-270deg);
   display: flex;
   gap: 5rem;
+  @media only screen and (min-width: 3840px) {
+    top: 75rem;
+    left: 18rem;
+  }
   span {
     color: rgba(255, 255, 255, 0.75);
     font-size: 3rem;
@@ -11,5 +15,8 @@
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    @media only screen and (min-width: 3840px) {
+      font-size: 6rem;
+    }
   }
 }

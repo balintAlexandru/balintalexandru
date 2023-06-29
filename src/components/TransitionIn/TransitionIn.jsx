@@ -103,13 +103,22 @@ const TransitionIn = ({ setTriggerContactAnimation }) => {
     pageTransitionIn();
   }, []);
 
+  const currentWidth = () => {
+    const width = window.innerWidth;
+    if (width >= 3840) {
+      return "6rem";
+    } else {
+      return "3rem";
+    }
+  };
+
   return (
     <div className="container-in">
       <div className="container-in-screen">
         <p
           style={{
             color: "white",
-            fontSize: "3rem",
+            fontSize: currentWidth(),
             position: "absolute",
             top: "5rem",
             right: "7rem",

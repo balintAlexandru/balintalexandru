@@ -21,6 +21,32 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
     onClose(false);
   };
 
+  const iconSize = () => {
+    const width = window.innerWidth;
+    if (width >= 3840) {
+      return "5rem";
+    } else {
+      return "2rem";
+    }
+  };
+
+  const lineSize = () => {
+    const width = window.innerWidth;
+    if (width >= 3840) {
+      return "20rem";
+    } else {
+      return "10rem";
+    }
+  };
+
+  const buttonLineSize = () => {
+    const width = window.innerWidth;
+    if (width >= 3840) {
+      return "10rem";
+    } else {
+      return "2.5rem";
+    }
+  };
   const CombineAnimation = (index, duration, delay) => {
     triggerShowAnimationDuration(
       `.circle-${index}`,
@@ -32,7 +58,7 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
       `.line-experience-${index}`,
       duration + 0.5,
       delay + 0.6,
-      "10rem"
+      lineSize()
     );
     triggerShowAnimationDuration(
       `.wrapper-${index}`,
@@ -49,7 +75,7 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
     CombineAnimation(1, 1.2, 1);
     CombineAnimation(2, 1.2, 2);
     CombineAnimation(3, 1.2, 3);
-    triggerVerticalAnimationLine(`.line-button`, 1.2, 4.5, "2.5rem");
+    triggerVerticalAnimationLine(`.line-button`, 1.2, 4.5, buttonLineSize());
     triggerShowAnimationDuration(`.circle-button`, 1.2, 4.9);
     triggerShowAnimationDuration(`.animation-button`, 1.2, 5.3);
     fadeInShowAnimation(".btn-normal", 1, 1.5);
@@ -80,7 +106,7 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
           </div>
         ))}
         <div className="experience-button-wrapper">
-          <dir className="line line-button" />
+          <dir className="line-button line" />
           <div className="button-wrapper">
             <dir className="circle circle-button" />
             <div className="animation-button">
@@ -96,7 +122,11 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
           handleClick();
         }}
       >
-        <MagneticButton title="🗙" fontSize="2rem" setShowDots={setShowDots} />
+        <MagneticButton
+          title="🗙"
+          fontSize={iconSize()}
+          setShowDots={setShowDots}
+        />
       </div>
     </div>
   );

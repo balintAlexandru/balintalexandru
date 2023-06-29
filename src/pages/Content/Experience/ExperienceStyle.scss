@@ -4,16 +4,27 @@
   left: 1rem;
   width: 35rem;
   height: 100%;
+  @media only screen and (min-width: 3840px) {
+    width: 70rem;
+    padding-left: 3rem;
+  }
   .experience-title {
     font-size: 4rem;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
+    @media only screen and (min-width: 3840px) {
+      font-size: 7rem;
+    }
   }
   .experience-text {
     width: 100%;
     height: 90%;
     padding-top: 5rem;
     padding-left: 1rem;
+    @media only screen and (min-width: 3840px) {
+      padding-top: 10rem;
+      padding-left: 2rem;
+    }
     .experience-item-container {
       display: flex;
       flex-direction: column;
@@ -24,24 +35,39 @@
           display: flex;
           align-items: center;
           gap: 1.5rem;
+          @media only screen and (min-width: 3840px) {
+            gap: 3rem;
+          }
           .circle {
             height: 1.5rem;
             width: 1.5rem;
             background-color: rgba(202, 198, 198, 0.473);
             border-radius: 50%;
             display: none;
+            @media only screen and (min-width: 3840px) {
+              height: 3.5rem;
+              width: 3.5rem;
+            }
           }
           span {
             color: rgba(255, 255, 255, 0.8);
             font-size: 1.8rem;
             display: none;
             height: 1.5rem;
+            @media only screen and (min-width: 3840px) {
+              font-size: 3.5rem;
+              height: 4rem;
+            }
           }
         }
         .row-2 {
           display: flex;
           margin-left: 0.7rem;
           gap: 2rem;
+          @media only screen and (min-width: 3840px) {
+            margin-left: 1.7rem;
+            gap: 4rem;
+          }
           .line {
             width: 0.2rem;
             height: 10rem;
@@ -53,11 +79,19 @@
             padding-top: 2rem;
             gap: 1.5rem;
             display: none;
+            @media only screen and (min-width: 3840px) {
+              padding-top: 3.5rem;
+              gap: 4rem;
+            }
             img {
               width: 5rem;
               height: 5rem;
               border-radius: 50%;
               cursor: default;
+              @media only screen and (min-width: 3840px) {
+                width: 12rem;
+                height: 12rem;
+              }
             }
             .item-text {
               display: flex;
@@ -68,11 +102,17 @@
                 font-size: 1.8rem;
                 font-weight: 600;
                 cursor: default;
+                @media only screen and (min-width: 3840px) {
+                  font-size: 4rem;
+                }
               }
               span {
                 color: rgba(255, 255, 255, 0.6);
                 font-size: 1.4rem;
                 font-style: italic;
+                @media only screen and (min-width: 3840px) {
+                  font-size: 3rem;
+                }
               }
             }
           }
@@ -88,24 +128,32 @@
         background-color: rgba(202, 198, 198, 0.473);
         margin-left: 0.7rem;
         display: none;
+        @media only screen and (min-width: 3840px) {
+          margin-left: 1.7rem;
+        }
       }
       .button-wrapper {
         display: flex;
         margin-left: 0.1rem;
         gap: 1rem;
+        @media only screen and (min-width: 3840px) {
+          gap: 3rem;
+        }
         .circle {
           height: 1.5rem;
           width: 1.5rem;
           background-color: rgba(202, 198, 198, 0.473);
           border-radius: 50%;
           display: none;
+          @media only screen and (min-width: 3840px) {
+            height: 3.5rem;
+            width: 3.5rem;
+          }
         }
         .animation-button {
           display: none;
         }
       }
-      // margin-top: 5rem;
-      // margin-left: 0.5rem;
     }
   }
   .bottom-line-experience {
@@ -125,6 +173,9 @@
     color: white;
     font-size: 2rem;
     cursor: pointer;
+    @media only screen and (min-width: 3840px) {
+      bottom: 3rem;
+    }
   }
   .experience-present-button {
     position: absolute;

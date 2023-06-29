@@ -18,6 +18,15 @@ const AboutMe = ({ onClose, setShowPersonNavigation }) => {
     onClose(false);
   };
 
+  const iconSize = () => {
+    const width = window.innerWidth;
+    if (width >= 3840) {
+      return "5rem";
+    } else {
+      return "2rem";
+    }
+  };
+
   useEffect(() => {
     fadeInShowAnimation(path.aboutMeTitle, 1);
     fadeInShowAnimation(path.aboutMeCloseButton, 2);
@@ -44,7 +53,7 @@ const AboutMe = ({ onClose, setShowPersonNavigation }) => {
           handleClick();
         }}
       >
-        <MagneticButton title="🗙" fontSize="2rem" />
+        <MagneticButton title="🗙" fontSize={iconSize()} />
       </div>
     </div>
   );
