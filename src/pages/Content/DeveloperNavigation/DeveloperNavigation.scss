@@ -4,6 +4,29 @@
   transform: rotate(270deg);
   display: flex;
   gap: 5rem;
+  @media only screen and (min-width: 800px) and (max-width: 1000px) {
+    top: 17rem;
+    right: -1rem;
+    gap: 1.5rem;
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    top: 27rem;
+    right: 4.8rem;
+    gap: 2rem;
+  }
+  @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+    top: 30rem;
+    right: 2.8rem;
+    gap: 3rem;
+  }
+  @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+    top: 48rem;
+    right: 7.5rem;
+  }
+  @media only screen and (min-width: 2880px) {
+    top: 58rem;
+    right: 7rem;
+  }
   @media only screen and (min-width: 3840px) {
     top: 75rem;
     right: 12rem;
@@ -15,6 +38,21 @@
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    @media only screen and (min-width: 800px) and (max-width: 1000px) {
+      font-size: 1.6rem;
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+      font-size: 2rem;
+    }
+    @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+      font-size: 2.5rem;
+    }
+    @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+      font-size: 4rem;
+    }
+    @media only screen and (min-width: 2880px) {
+      font-size: 5rem;
+    }
     @media only screen and (min-width: 3840px) {
       font-size: 6rem;
     }

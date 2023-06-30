@@ -4,6 +4,22 @@
   left: 1rem;
   width: 35rem;
   height: 100%;
+  @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    width: 30rem;
+    padding-left: 0.5rem;
+  }
+  @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+    width: 35rem;
+    padding-left: 0.5rem;
+  }
+  @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+    width: 50rem;
+    padding-left: 3rem;
+  }
+  @media only screen and (min-width: 2880px) {
+    width: 55rem;
+    padding-left: 3rem;
+  }
   @media only screen and (min-width: 3840px) {
     width: 70rem;
     padding-left: 3rem;
@@ -12,6 +28,18 @@
     font-size: 4rem;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
+    @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+      font-size: 3rem;
+    }
+    @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+      font-size: 3.5rem;
+    }
+    @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+      font-size: 5rem;
+    }
+    @media only screen and (min-width: 2880px) {
+      font-size: 6rem;
+    }
     @media only screen and (min-width: 3840px) {
       font-size: 7rem;
     }
@@ -21,6 +49,22 @@
     height: 90%;
     padding-top: 5rem;
     padding-left: 1rem;
+    @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+      padding-top: 3rem;
+      padding-left: 0.5rem;
+    }
+    @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+      padding-top: 2rem;
+      padding-left: 0.5rem;
+    }
+    @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+      padding-top: 6rem;
+      padding-left: 0.5rem;
+    }
+    @media only screen and (min-width: 2880px) {
+      padding-top: 8rem;
+      padding-left: 1rem;
+    }
     @media only screen and (min-width: 3840px) {
       padding-top: 10rem;
       padding-left: 2rem;
@@ -35,6 +79,18 @@
           display: flex;
           align-items: center;
           gap: 1.5rem;
+          @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+            gap: 1.2rem;
+          }
+          @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+            gap: 1.5rem;
+          }
+          @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+            gap: 2.5rem;
+          }
+          @media only screen and (min-width: 2880px) {
+            gap: 2.8rem;
+          }
           @media only screen and (min-width: 3840px) {
             gap: 3rem;
           }
@@ -44,6 +100,15 @@
             background-color: rgba(202, 198, 198, 0.473);
             border-radius: 50%;
             display: none;
+
+            @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+              height: 2.5rem;
+              width: 2.5rem;
+            }
+            @media only screen and (min-width: 2880px) {
+              height: 3rem;
+              width: 3rem;
+            }
             @media only screen and (min-width: 3840px) {
               height: 3.5rem;
               width: 3.5rem;
@@ -54,6 +119,21 @@
             font-size: 1.8rem;
             display: none;
             height: 1.5rem;
+            @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+              font-size: 1.6rem;
+              height: 1.6rem;
+            }
+            @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+              height: 1.8rem;
+            }
+            @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+              font-size: 2.5rem;
+              height: 2rem;
+            }
+            @media only screen and (min-width: 2880px) {
+              font-size: 3rem;
+              height: 3rem;
+            }
             @media only screen and (min-width: 3840px) {
               font-size: 3.5rem;
               height: 4rem;
@@ -64,6 +144,17 @@
           display: flex;
           margin-left: 0.7rem;
           gap: 2rem;
+          @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+            gap: 1.5rem;
+          }
+          @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+            margin-left: 1.2rem;
+            gap: 3rem;
+          }
+          @media only screen and (min-width: 2880px) {
+            margin-left: 1.4rem;
+            gap: 3rem;
+          }
           @media only screen and (min-width: 3840px) {
             margin-left: 1.7rem;
             gap: 4rem;
@@ -79,6 +170,23 @@
             padding-top: 2rem;
             gap: 1.5rem;
             display: none;
+            align-items: center;
+            @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+              padding-top: 0rem;
+              gap: 1.2rem;
+            }
+            @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+              padding-top: 0rem;
+              gap: 1.5rem;
+            }
+            @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+              padding-top: 0rem;
+              gap: 2.5rem;
+            }
+            @media only screen and (min-width: 2880px) {
+              padding-top: 0rem;
+              gap: 3rem;
+            }
             @media only screen and (min-width: 3840px) {
               padding-top: 3.5rem;
               gap: 4rem;
@@ -88,6 +196,19 @@
               height: 5rem;
               border-radius: 50%;
               cursor: default;
+
+              @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+                width: 4rem;
+                height: 4rem;
+              }
+              @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+                width: 7rem;
+                height: 7rem;
+              }
+              @media only screen and (min-width: 2880px) {
+                width: 10rem;
+                height: 10rem;
+              }
               @media only screen and (min-width: 3840px) {
                 width: 12rem;
                 height: 12rem;
@@ -102,6 +223,15 @@
                 font-size: 1.8rem;
                 font-weight: 600;
                 cursor: default;
+                @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+                  font-size: 1.6rem;
+                }
+                @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+                  font-size: 2.5rem;
+                }
+                @media only screen and (min-width: 2880px) {
+                  font-size: 3rem;
+                }
                 @media only screen and (min-width: 3840px) {
                   font-size: 4rem;
                 }
@@ -110,6 +240,15 @@
                 color: rgba(255, 255, 255, 0.6);
                 font-size: 1.4rem;
                 font-style: italic;
+                @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+                  font-size: 1.2rem;
+                }
+                @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+                  font-size: 2rem;
+                }
+                @media only screen and (min-width: 2880px) {
+                  font-size: 2.4rem;
+                }
                 @media only screen and (min-width: 3840px) {
                   font-size: 3rem;
                 }
@@ -128,6 +267,13 @@
         background-color: rgba(202, 198, 198, 0.473);
         margin-left: 0.7rem;
         display: none;
+
+        @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+          margin-left: 1.2rem;
+        }
+        @media only screen and (min-width: 2880px) {
+          margin-left: 1.4rem;
+        }
         @media only screen and (min-width: 3840px) {
           margin-left: 1.7rem;
         }
@@ -136,6 +282,12 @@
         display: flex;
         margin-left: 0.1rem;
         gap: 1rem;
+        @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+          gap: 3rem;
+        }
+        @media only screen and (min-width: 2880px) {
+          gap: 2.5rem;
+        }
         @media only screen and (min-width: 3840px) {
           gap: 3rem;
         }
@@ -145,6 +297,14 @@
           background-color: rgba(202, 198, 198, 0.473);
           border-radius: 50%;
           display: none;
+          @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+            height: 2.5rem;
+            width: 2.5rem;
+          }
+          @media only screen and (min-width: 2880px) {
+            height: 3rem;
+            width: 3rem;
+          }
           @media only screen and (min-width: 3840px) {
             height: 3.5rem;
             width: 3.5rem;
@@ -173,6 +333,12 @@
     color: white;
     font-size: 2rem;
     cursor: pointer;
+    @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+      bottom: 2rem;
+    }
+    @media only screen and (min-width: 2880px) {
+      bottom: 3rem;
+    }
     @media only screen and (min-width: 3840px) {
       bottom: 3rem;
     }

@@ -25,6 +25,10 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
     const width = window.innerWidth;
     if (width >= 3840) {
       return "5rem";
+    } else if (width >= 2880 && width <= 3840) {
+      return "4rem";
+    } else if (width >= 2304 && width <= 2560) {
+      return "3rem";
     } else {
       return "2rem";
     }
@@ -34,6 +38,14 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
     const width = window.innerWidth;
     if (width >= 3840) {
       return "20rem";
+    } else if (width >= 2880 && width <= 3840) {
+      return "16rem";
+    } else if (width >= 2304 && width <= 2560) {
+      return "14rem";
+    } else if (width >= 1366 && width <= 1440) {
+      return "9rem";
+    } else if (width >= 1024 && width <= 1280) {
+      return "7.5rem";
     } else {
       return "10rem";
     }
@@ -43,10 +55,17 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
     const width = window.innerWidth;
     if (width >= 3840) {
       return "10rem";
+    } else if (width >= 2880 && width <= 3840) {
+      return "6rem";
+    } else if (width >= 2304 && width <= 2560) {
+      return "5.5rem";
+    } else if (width >= 1024 && width <= 1280) {
+      return "3rem";
     } else {
       return "2.5rem";
     }
   };
+
   const CombineAnimation = (index, duration, delay) => {
     triggerShowAnimationDuration(
       `.circle-${index}`,
@@ -79,6 +98,7 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
     triggerShowAnimationDuration(`.circle-button`, 1.2, 4.9);
     triggerShowAnimationDuration(`.animation-button`, 1.2, 5.3);
     fadeInShowAnimation(".btn-normal", 1, 1.5);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

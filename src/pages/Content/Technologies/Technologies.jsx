@@ -25,6 +25,12 @@ const Technologies = ({ onClose, setShowDeveloperNavigation }) => {
     const width = window.innerWidth;
     if (width >= 3840) {
       return "5rem";
+    } else if (width >= 2880 && width <= 3840) {
+      return "4rem";
+    } else if (width >= 2304 && width <= 2560) {
+      return "3rem";
+    } else if (width >= 1024 && width <= 1280) {
+      return "2rem";
     } else {
       return "2rem";
     }

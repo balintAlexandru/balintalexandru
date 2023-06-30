@@ -162,6 +162,10 @@ const currentYPoz = () => {
   const width = window.innerWidth;
   if (width >= 3840) {
     return 250;
+  } else if (width >= 2880 && width <= 3840) {
+    return 280;
+  } else if (width >= 2304 && width <= 2560) {
+    return 250;
   } else {
     return 150;
   }

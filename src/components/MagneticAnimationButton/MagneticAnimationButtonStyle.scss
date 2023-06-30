@@ -1,6 +1,15 @@
 .wrapper {
   width: 19rem;
   z-index: 0;
+  @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    width: 16rem;
+  }
+  @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+    width: 25rem;
+  }
+  @media only screen and (min-width: 2880px) {
+    width: 30rem;
+  }
   @media only screen and (min-width: 3840px) {
     width: 39rem;
   }
@@ -43,6 +52,15 @@
   will-change: transform;
   outline: 0;
   transform: translateZ(0) rotate(0.001deg);
+  @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    height: 4rem;
+  }
+  @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+    height: 6rem;
+  }
+  @media only screen and (min-width: 2880px) {
+    height: 8em;
+  }
   @media only screen and (min-width: 3840px) {
     height: 8em;
   }
@@ -86,6 +104,15 @@
   font-size: 18px;
   letter-spacing: -0.3px;
   font-weight: 400;
+  @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    font-size: 16px;
+  }
+  @media only screen and (min-width: 2304px) and (max-width: 2560px) {
+    font-size: 24px;
+  }
+  @media only screen and (min-width: 2880px) {
+    font-size: 30px;
+  }
   @media only screen and (min-width: 3840px) {
     font-size: 30px;
   }
