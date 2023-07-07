@@ -201,6 +201,10 @@ const currentScale = () => {
   const width = window.innerWidth;
   if (width >= 3840) {
     return 11;
+  } else if (width >= 2880 && width <= 3840) {
+    return 10;
+  } else if (width >= 2304 && width <= 2560) {
+    return 9;
   } else {
     return 20;
   }
