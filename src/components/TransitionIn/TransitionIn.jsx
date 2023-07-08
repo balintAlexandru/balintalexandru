@@ -107,6 +107,8 @@ const TransitionIn = ({ setTriggerContactAnimation }) => {
     const width = window.innerWidth;
     if (width >= 3840) {
       return "6rem";
+    } else if (width >= 2880 && width <= 3840) {
+      return "5rem";
     } else {
       return "3rem";
     }

@@ -30,6 +30,10 @@ const ContactForm = ({ click, setTriggerContactAnimation }) => {
     const width = window.innerWidth;
     if (width >= 3840) {
       return "6.4rem";
+    } else if (width >= 2880 && width <= 3840) {
+      return "8rem";
+    } else if (width >= 2304 && width <= 2560) {
+      return "7rem";
     } else {
       return "4.5rem";
     }
@@ -39,6 +43,12 @@ const ContactForm = ({ click, setTriggerContactAnimation }) => {
     const width = window.innerWidth;
     if (width >= 3840) {
       return 2;
+    } else if (width >= 2880 && width <= 3840) {
+      return 1.7;
+    } else if (width >= 2304 && width <= 2560) {
+      return 1.5;
+    } else if (width >= 1024 && width <= 1280) {
+      return 0.8;
     } else {
       return 1;
     }
@@ -56,6 +66,10 @@ const ContactForm = ({ click, setTriggerContactAnimation }) => {
     const width = window.innerWidth;
     if (width >= 3840) {
       return 70;
+    } else if (width >= 2880 && width <= 3840) {
+      return 60;
+    } else if (width >= 2304 && width <= 2560) {
+      return 60;
     } else {
       return 0;
     }
