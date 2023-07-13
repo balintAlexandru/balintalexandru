@@ -8,7 +8,7 @@
   overflow: hidden;
   flex-direction: column;
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 500px) {
     width: 20rem;
     height: 10rem;
   }
@@ -52,7 +52,7 @@
       cursor: default;
       position: absolute;
       top: 8rem;
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 500px) {
         font-size: 3rem;
         top: 7rem;
       }
@@ -88,7 +88,7 @@
       cursor: default;
       position: absolute;
       top: -6rem;
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 500px) {
         font-size: 3rem;
         top: -5.5rem;
       }
@@ -126,7 +126,7 @@
     height: 4rem;
     position: absolute;
     top: 3rem;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 500px) {
       font-size: 1.8rem;
       top: 2rem;
     }
@@ -145,7 +145,7 @@
     span {
       color: white;
       font-size: 3rem;
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 500px) {
         font-size: 1.8rem;
         top: 0rem;
       }
@@ -177,7 +177,7 @@
   left: -25%;
   display: none;
   position: absolute;
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 500px) {
     width: 24rem;
     font-size: 20px;
     top: 30%;
