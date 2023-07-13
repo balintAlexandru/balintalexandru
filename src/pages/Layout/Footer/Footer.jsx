@@ -25,7 +25,7 @@ const Footer = ({ setTriggerContactAnimation }) => {
       return "2rem";
     } else if (width >= 800 && width <= 1000) {
       return "1.5rem";
-    } else if (width <= 400) {
+    } else if (width <= 500) {
       return "2.5rem";
     } else {
       return "2.5rem";
@@ -46,7 +46,7 @@ const Footer = ({ setTriggerContactAnimation }) => {
       return "1.4rem";
     } else if (width >= 800 && width <= 1000) {
       return "1.3rem";
-    } else if (width <= 400) {
+    } else if (width <= 500) {
       return "1.6rem";
     } else {
       return "1.6rem";

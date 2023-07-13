@@ -52,6 +52,8 @@ const Content = () => {
       return -50;
     } else if (width >= 800 && width <= 1000) {
       return -40;
+    } else if (width <= 500) {
+      return -45;
     } else {
       return -80;
     }
@@ -71,6 +73,8 @@ const Content = () => {
       return 50;
     } else if (width >= 800 && width <= 1000) {
       return 40;
+    } else if (width <= 500) {
+      return 45;
     } else {
       return 80;
     }
