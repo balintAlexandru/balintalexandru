@@ -8,7 +8,7 @@ import ContactForm from "../ContactForm/ContactForm";
 import circleLarge from "../../assets/images/circle-large.webp";
 import circleSmall from "../../assets/images/circle-small.webp";
 import { triggerHideAnimation } from "../../utils/gsap/animations";
-import Div100vh from "react-div-100vh";
+
 function pageTransitionIn() {
   var tl = gsap.timeline();
 
@@ -117,45 +117,43 @@ const TransitionIn = ({ setTriggerContactAnimation }) => {
   };
 
   return (
-    <Div100vh>
-      <div className="container-in">
-        <div className="container-in-screen">
-          <p
-            className="close-contact"
-            style={{
-              color: "white",
-              fontSize: currentWidth(),
-              position: "absolute",
-              top: "5rem",
-              right: "7rem",
-              cursor: "pointer",
-            }}
-            onClick={() => {
-              triggerHideAnimation(".circle-large", 0.2);
-              triggerHideAnimation(".circle-small", 0.2);
-              triggerTransitionOut();
-              setTimeout(() => {
-                setTriggerContactAnimation(false);
-              }, 1000);
-            }}
-          >
-            🗙
-          </p>
-          <ContactForm
-            click={triggerTransitionOut}
-            setTriggerContactAnimation={setTriggerContactAnimation}
-          />
-          <div className="rounded-div-wrap top">
-            <div className="rounded-div"></div>
-          </div>
-          <div className="rounded-div-wrap bottom">
-            <div className="rounded-div"></div>
-          </div>
+    <div className="container-in">
+      <div className="container-in-screen">
+        <p
+          className="close-contact"
+          style={{
+            color: "white",
+            fontSize: currentWidth(),
+            position: "absolute",
+            top: "5rem",
+            right: "7rem",
+            cursor: "pointer",
+          }}
+          onClick={() => {
+            triggerHideAnimation(".circle-large", 0.2);
+            triggerHideAnimation(".circle-small", 0.2);
+            triggerTransitionOut();
+            setTimeout(() => {
+              setTriggerContactAnimation(false);
+            }, 500);
+          }}
+        >
+          🗙
+        </p>
+        <ContactForm
+          click={triggerTransitionOut}
+          setTriggerContactAnimation={setTriggerContactAnimation}
+        />
+        <div className="rounded-div-wrap top">
+          <div className="rounded-div"></div>
         </div>
-        <img src={circleLarge} alt="poza" className="circle-large" />
-        <img src={circleSmall} alt="poza" className="circle-small" />
+        <div className="rounded-div-wrap bottom">
+          <div className="rounded-div"></div>
+        </div>
       </div>
-    </Div100vh>
+      <img src={circleLarge} alt="poza" className="circle-large" />
+      <img src={circleSmall} alt="poza" className="circle-small" />
+    </div>
   );
 };
 

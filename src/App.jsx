@@ -1,18 +1,22 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Layout from "./pages/Layout/Layout";
 import Content from "./pages/Content/Content";
 import TransitionIn from "./components/TransitionIn/TransitionIn";
 import TransitionOut from "./components/TransitionOut/TransitionOut";
+import Div100vh from "react-div-100vh";
 
 const App = () => {
   const [triggerContactAnimation, setTriggerContactAnimation] = useState(false);
-  const [width, setWidth] = useState(window.innerWidth);
 
   return (
     <>
       <TransitionOut />
       {triggerContactAnimation && (
-        <TransitionIn setTriggerContactAnimation={setTriggerContactAnimation} />
+        <Div100vh>
+          <TransitionIn
+            setTriggerContactAnimation={setTriggerContactAnimation}
+          />
+        </Div100vh>
       )}
       <Layout setTriggerContactAnimation={setTriggerContactAnimation}>
         <Content />
