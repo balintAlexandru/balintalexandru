@@ -12,15 +12,13 @@ const App = () => {
     <>
       <TransitionOut />
       {triggerContactAnimation && (
-        <Div100vh>
-          <TransitionIn
-            setTriggerContactAnimation={setTriggerContactAnimation}
-          />
-        </Div100vh>
+        <TransitionIn setTriggerContactAnimation={setTriggerContactAnimation} />
       )}
-      <Layout setTriggerContactAnimation={setTriggerContactAnimation}>
-        <Content />
-      </Layout>
+      <Div100vh>
+        <Layout setTriggerContactAnimation={setTriggerContactAnimation}>
+          <Content />
+        </Layout>
+      </Div100vh>
     </>
   );
 };
