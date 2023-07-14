@@ -116,6 +116,7 @@
       }
       @media only screen and (max-width: 500px) {
         font-size: 1.6rem;
+        border-radius: 0rem;
       }
       @media only screen and (min-width: 1024px) and (max-width: 1280px) {
         font-size: 1.6rem;
@@ -150,6 +151,7 @@
         color: rgba(255, 255, 255, 0.7);
       }
       @media only screen and (max-width: 500px) {
+        border-radius: 0rem;
         line-height: 2.4rem;
         margin-top: 1rem;
         font-size: 1.6rem;
