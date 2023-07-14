@@ -8,6 +8,7 @@ import ContactForm from "../ContactForm/ContactForm";
 import circleLarge from "../../assets/images/circle-large.webp";
 import circleSmall from "../../assets/images/circle-small.webp";
 import { triggerHideAnimation } from "../../utils/gsap/animations";
+import { CgClose } from "react-icons/cg";
 
 function pageTransitionIn() {
   var tl = gsap.timeline();
@@ -59,7 +60,7 @@ const triggerTransitionOut = () => {
   var tl = gsap.timeline();
   setTimeout(() => {
     document.querySelector(".container-in").style.display = "none";
-  }, 1000);
+  }, 500);
   tl.to(".container-in-screen", {
     duration: 0.8,
     top: "-100%",
@@ -110,7 +111,7 @@ const TransitionIn = ({ setTriggerContactAnimation }) => {
     } else if (width >= 2880 && width <= 3840) {
       return "5rem";
     } else if (width <= 500) {
-      return "2rem";
+      return "3rem";
     } else {
       return "3rem";
     }
@@ -138,7 +139,7 @@ const TransitionIn = ({ setTriggerContactAnimation }) => {
             }, 500);
           }}
         >
-          🗙
+          <CgClose size={currentWidth()} />
         </p>
         <ContactForm
           click={triggerTransitionOut}
