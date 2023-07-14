@@ -16,6 +16,10 @@
     height: 150rem;
     z-index: 0;
     transform: scale(0);
+    @media only screen and (max-width: 500px) {
+      bottom: -77rem;
+      right: -74rem;
+    }
   }
   .circle-small {
     left: -10rem;
@@ -25,6 +29,17 @@
     height: 80rem;
     z-index: 0;
     transform: scale(0);
+    @media only screen and (max-width: 500px) {
+      left: -35rem;
+      top: -40rem;
+    }
+  }
+}
+.close-contact {
+  @media only screen and (max-width: 500px) {
+    position: absolute;
+    top: 2rem !important;
+    right: 2rem !important;
   }
 }
 .container-in-screen {

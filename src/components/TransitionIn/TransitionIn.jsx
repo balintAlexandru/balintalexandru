@@ -109,6 +109,8 @@ const TransitionIn = ({ setTriggerContactAnimation }) => {
       return "6rem";
     } else if (width >= 2880 && width <= 3840) {
       return "5rem";
+    } else if (width <= 500) {
+      return "2rem";
     } else {
       return "3rem";
     }
@@ -118,6 +120,7 @@ const TransitionIn = ({ setTriggerContactAnimation }) => {
     <div className="container-in">
       <div className="container-in-screen">
         <p
+          className="close-contact"
           style={{
             color: "white",
             fontSize: currentWidth(),

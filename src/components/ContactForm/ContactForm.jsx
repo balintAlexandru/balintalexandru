@@ -49,6 +49,8 @@ const ContactForm = ({ click, setTriggerContactAnimation }) => {
       return 1.5;
     } else if (width >= 1024 && width <= 1280) {
       return 0.8;
+    } else if (width <= 500) {
+      return 0.4;
     } else {
       return 1;
     }
