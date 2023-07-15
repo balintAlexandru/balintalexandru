@@ -19,7 +19,7 @@ import { path } from "../../utils/gsap/constants";
 import Technologies from "./Technologies/Technologies";
 import Projects from "./Projects/Projects";
 
-const Content = () => {
+const Content = ({ setTriggerMobileLayout }) => {
   const [showCursorDelay, setShowCursorDelay] = useState(false);
   const [isPersonOpen, setIsPersonOpen] = useState(false);
   const [isDeveloperOpen, setIsDeveloperOpen] = useState(false);
@@ -154,6 +154,7 @@ const Content = () => {
             experience={setSelectedExperience}
             aboutMe={setSelectedAboutMe}
             setShowPersonNavigation={setShowPersonNavigation}
+            setTriggerMobileLayout={setTriggerMobileLayout}
           />
         )}
         {showDeveloperNavigation && (
@@ -161,6 +162,7 @@ const Content = () => {
             projects={setSelectedProjects}
             technologies={setSelectedTechnologies}
             setShowDeveloperNavigation={setShowDeveloperNavigation}
+            setTriggerMobileLayout={setTriggerMobileLayout}
           />
         )}
 

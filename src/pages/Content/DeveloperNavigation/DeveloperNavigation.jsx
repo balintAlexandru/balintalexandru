@@ -11,6 +11,7 @@ const DeveloperNavigation = ({
   projects,
   technologies,
   setShowDeveloperNavigation,
+  setTriggerMobileLayout,
 }) => {
   const tabsModel = [
     {
@@ -22,13 +23,21 @@ const DeveloperNavigation = ({
   ];
 
   const handleClick = (name) => {
-    triggerHideAnimation(path.personImage, 0);
-    setShowDeveloperNavigation(false);
-    triggerShowAnimation(path.developerPersonWrapper, 0);
-    if (name === "Projects") {
-      projects(true);
+    const width = window.innerWidth;
+    if (width <= 500) {
+      setTriggerMobileLayout({
+        show: true,
+        page: name,
+      });
     } else {
-      technologies(true);
+      triggerHideAnimation(path.personImage, 0);
+      setShowDeveloperNavigation(false);
+      triggerShowAnimation(path.developerPersonWrapper, 0);
+      if (name === "Projects") {
+        projects(true);
+      } else {
+        technologies(true);
+      }
     }
   };
 
