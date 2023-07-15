@@ -46,6 +46,8 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
       return "9rem";
     } else if (width >= 1024 && width <= 1280) {
       return "7.5rem";
+    } else if (width <= 500) {
+      return "7.5rem";
     } else {
       return "10rem";
     }
@@ -60,6 +62,8 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
     } else if (width >= 2304 && width <= 2560) {
       return "5.5rem";
     } else if (width >= 1024 && width <= 1280) {
+      return "3rem";
+    } else if (width <= 500) {
       return "3rem";
     } else {
       return "2.5rem";

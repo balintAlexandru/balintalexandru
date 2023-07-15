@@ -4,6 +4,13 @@
   left: 1rem;
   width: 35rem;
   height: 100%;
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    padding: 0;
+  }
   @media only screen and (min-width: 1024px) and (max-width: 1280px) {
     width: 30rem;
     padding-left: 0.5rem;
@@ -28,6 +35,11 @@
     font-size: 4rem;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
+    @media only screen and (max-width: 500px) {
+      font-size: 3.4rem;
+      margin-top: 5rem;
+      padding-left: 2.5rem;
+    }
     @media only screen and (min-width: 1024px) and (max-width: 1280px) {
       font-size: 3rem;
     }
@@ -49,6 +61,10 @@
     height: 90%;
     padding-top: 5rem;
     padding-left: 1rem;
+    @media only screen and (max-width: 500px) {
+      padding-top: 4rem;
+      padding-left: 2.5rem;
+    }
     @media only screen and (min-width: 1024px) and (max-width: 1280px) {
       padding-top: 3rem;
       padding-left: 0.5rem;
@@ -79,6 +95,9 @@
           display: flex;
           align-items: center;
           gap: 1.5rem;
+          @media only screen and (max-width: 500px) {
+            gap: 1rem;
+          }
           @media only screen and (min-width: 1024px) and (max-width: 1280px) {
             gap: 1.2rem;
           }
@@ -100,7 +119,10 @@
             background-color: rgba(202, 198, 198, 0.473);
             border-radius: 50%;
             display: none;
-
+            @media only screen and (max-width: 500px) {
+              height: 1.4rem;
+              width: 1.4rem;
+            }
             @media only screen and (min-width: 2304px) and (max-width: 2560px) {
               height: 2.5rem;
               width: 2.5rem;
@@ -119,6 +141,10 @@
             font-size: 1.8rem;
             display: none;
             height: 1.5rem;
+            @media only screen and (max-width: 500px) {
+              font-size: 1.4rem;
+              height: 1.6rem;
+            }
             @media only screen and (min-width: 1024px) and (max-width: 1280px) {
               font-size: 1.6rem;
               height: 1.6rem;
@@ -144,6 +170,10 @@
           display: flex;
           margin-left: 0.7rem;
           gap: 2rem;
+          @media only screen and (max-width: 500px) {
+            gap: 1.2rem;
+            margin-left: 0.6rem;
+          }
           @media only screen and (min-width: 1024px) and (max-width: 1280px) {
             gap: 1.5rem;
           }
@@ -171,6 +201,10 @@
             gap: 1.5rem;
             display: none;
             align-items: center;
+            @media only screen and (max-width: 500px) {
+              padding-top: 0rem;
+              gap: 1.2rem;
+            }
             @media only screen and (min-width: 1024px) and (max-width: 1280px) {
               padding-top: 0rem;
               gap: 1.2rem;
@@ -196,7 +230,10 @@
               height: 5rem;
               border-radius: 50%;
               cursor: default;
-
+              @media only screen and (max-width: 500px) {
+                width: 4rem;
+                height: 4rem;
+              }
               @media only screen and (min-width: 1024px) and (max-width: 1280px) {
                 width: 4rem;
                 height: 4rem;
@@ -223,6 +260,9 @@
                 font-size: 1.8rem;
                 font-weight: 600;
                 cursor: default;
+                @media only screen and (max-width: 500px) {
+                  font-size: 1.6rem;
+                }
                 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
                   font-size: 1.6rem;
                 }
@@ -240,6 +280,9 @@
                 color: rgba(255, 255, 255, 0.6);
                 font-size: 1.4rem;
                 font-style: italic;
+                @media only screen and (max-width: 500px) {
+                  font-size: 1.2rem;
+                }
                 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
                   font-size: 1.2rem;
                 }
@@ -261,13 +304,16 @@
     .experience-button-wrapper {
       display: flex;
       flex-direction: column;
+
       .line {
         width: 0.2rem;
         height: 2.5rem;
         background-color: rgba(202, 198, 198, 0.473);
         margin-left: 0.7rem;
         display: none;
-
+        @media only screen and (max-width: 500px) {
+          margin-left: 0.6rem;
+        }
         @media only screen and (min-width: 2304px) and (max-width: 2560px) {
           margin-left: 1.2rem;
         }
@@ -297,6 +343,10 @@
           background-color: rgba(202, 198, 198, 0.473);
           border-radius: 50%;
           display: none;
+          @media only screen and (max-width: 500px) {
+            height: 1.4rem;
+            width: 1.4rem;
+          }
           @media only screen and (min-width: 2304px) and (max-width: 2560px) {
             height: 2.5rem;
             width: 2.5rem;
@@ -323,6 +373,9 @@
     height: 0.1rem;
     background-color: white;
     opacity: 85%;
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
   }
   .experience-close-button {
     position: absolute;
@@ -333,6 +386,9 @@
     color: white;
     font-size: 2rem;
     cursor: pointer;
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
     @media only screen and (min-width: 2304px) and (max-width: 2560px) {
       bottom: 2rem;
     }
@@ -355,5 +411,8 @@
     font-size: 1.4rem;
     cursor: pointer;
     border-radius: 50%;
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
   }
 }

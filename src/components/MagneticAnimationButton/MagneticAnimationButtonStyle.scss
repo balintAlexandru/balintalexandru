@@ -1,6 +1,9 @@
 .wrapper {
   width: 19rem;
   z-index: 0;
+  @media only screen and (max-width: 500px) {
+    width: 16rem;
+  }
   @media only screen and (min-width: 1024px) and (max-width: 1280px) {
     width: 16rem;
   }
@@ -52,6 +55,9 @@
   will-change: transform;
   outline: 0;
   transform: translateZ(0) rotate(0.001deg);
+  @media only screen and (max-width: 500px) {
+    height: 4rem;
+  }
   @media only screen and (min-width: 1024px) and (max-width: 1280px) {
     height: 4rem;
   }
@@ -104,6 +110,9 @@
   font-size: 18px;
   letter-spacing: -0.3px;
   font-weight: 400;
+  @media only screen and (max-width: 500px) {
+    font-size: 18px;
+  }
   @media only screen and (min-width: 1024px) and (max-width: 1280px) {
     font-size: 16px;
   }
