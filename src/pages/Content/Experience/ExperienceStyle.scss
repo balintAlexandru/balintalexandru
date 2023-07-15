@@ -142,7 +142,7 @@
             display: none;
             height: 1.5rem;
             @media only screen and (max-width: 500px) {
-              font-size: 1.4rem;
+              font-size: 1.6rem;
               height: 1.6rem;
             }
             @media only screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -231,8 +231,8 @@
               border-radius: 50%;
               cursor: default;
               @media only screen and (max-width: 500px) {
-                width: 4rem;
-                height: 4rem;
+                width: 4.5rem;
+                height: 4.5rem;
               }
               @media only screen and (min-width: 1024px) and (max-width: 1280px) {
                 width: 4rem;
@@ -261,7 +261,7 @@
                 font-weight: 600;
                 cursor: default;
                 @media only screen and (max-width: 500px) {
-                  font-size: 1.6rem;
+                  font-size: 1.8rem;
                 }
                 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
                   font-size: 1.6rem;
@@ -281,7 +281,7 @@
                 font-size: 1.4rem;
                 font-style: italic;
                 @media only screen and (max-width: 500px) {
-                  font-size: 1.2rem;
+                  font-size: 1.4rem;
                 }
                 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
                   font-size: 1.2rem;

@@ -2,7 +2,7 @@
   width: 19rem;
   z-index: 0;
   @media only screen and (max-width: 500px) {
-    width: 16rem;
+    width: 18rem;
   }
   @media only screen and (min-width: 1024px) and (max-width: 1280px) {
     width: 16rem;
@@ -56,7 +56,7 @@
   outline: 0;
   transform: translateZ(0) rotate(0.001deg);
   @media only screen and (max-width: 500px) {
-    height: 4rem;
+    height: 4.5rem;
   }
   @media only screen and (min-width: 1024px) and (max-width: 1280px) {
     height: 4rem;
