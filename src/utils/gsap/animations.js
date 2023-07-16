@@ -166,6 +166,8 @@ const currentYPoz = () => {
     return 280;
   } else if (width >= 2304 && width <= 2560) {
     return 250;
+  } else if (width <= 500) {
+    return 180;
   } else {
     return 150;
   }

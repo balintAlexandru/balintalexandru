@@ -10,6 +10,17 @@
   align-items: flex-end;
   padding-right: 2rem;
   overflow: hidden;
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4rem;
+    padding: 0;
+    right: 0;
+    gap: 3.5rem;
+    position: relative;
+  }
   @media only screen and (min-width: 1024px) and (max-width: 1280px) {
     width: 35rem;
   }
@@ -29,6 +40,11 @@
     font-size: 4rem;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
+    @media only screen and (max-width: 500px) {
+      font-size: 2.8rem;
+      margin-top: 5rem;
+      padding-left: 2.5rem;
+    }
     @media only screen and (min-width: 1024px) and (max-width: 1280px) {
       font-size: 3rem;
     }
@@ -52,6 +68,12 @@
     justify-content: center;
     align-items: center;
     margin-right: 2rem;
+    @media only screen and (max-width: 500px) {
+      margin-top: 3rem;
+      margin-right: 0rem;
+      justify-content: center;
+      align-items: flex-start;
+    }
     @media only screen and (min-width: 1024px) and (max-width: 1280px) {
       margin-top: 1rem;
       margin-right: 3rem;
@@ -80,9 +102,15 @@
     cursor: pointer;
     height: 0.1rem;
     width: 100%;
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
   }
   .technologies-close-button {
     padding-bottom: 1rem;
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
     @media only screen and (min-width: 1366px) and (max-width: 1440px) {
       padding-bottom: 1rem;
     }
@@ -103,8 +131,13 @@
     height: 15rem;
     align-items: flex-end;
     justify-content: space-between;
-    // @media only screen and (min-width: 1366px) and (max-width: 1440px) {
-    //   bottom: 9.5rem;
-    // }
+    @media only screen and (max-width: 500px) {
+      height: 14rem;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0rem;
+    }
   }
 }

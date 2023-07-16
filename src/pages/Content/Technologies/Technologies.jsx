@@ -59,6 +59,7 @@ const Technologies = ({ onClose, setShowDeveloperNavigation }) => {
         >
           <MagneticButton title="🗙" fontSize={iconSize()} />
         </div>
+
         <TechnologiesCard />
       </div>
 

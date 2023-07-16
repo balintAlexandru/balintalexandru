@@ -4,6 +4,8 @@ import { useEffect } from "react";
 
 import Experience from "../../pages/Content/Experience/Experience";
 import AboutMe from "../../pages/Content/AboutMe/AboutMe";
+import Projects from "../../pages/Content/Projects/Projects";
+import Technologies from "../../pages/Content/Technologies/Technologies";
 
 import "./TransitionMobileStyle.scss";
 
@@ -105,6 +107,10 @@ const TransitionMobile = ({ triggerMobileLayout, setTriggerMobileLayout }) => {
         return <Experience />;
       case "About me":
         return <AboutMe />;
+      case "Projects":
+        return <Projects />;
+      case "Technologies":
+        return <Technologies />;
       default:
         break;
     }
