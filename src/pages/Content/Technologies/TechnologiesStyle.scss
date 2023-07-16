@@ -73,6 +73,7 @@
       margin-right: 0rem;
       justify-content: center;
       align-items: flex-start;
+      height: auto;
     }
     @media only screen and (min-width: 1024px) and (max-width: 1280px) {
       margin-top: 1rem;
@@ -136,8 +137,6 @@
       overflow: hidden;
       align-items: center;
       justify-content: center;
-      position: absolute;
-      bottom: 0rem;
     }
   }
 }
