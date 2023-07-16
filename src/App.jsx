@@ -24,10 +24,12 @@ const App = () => {
     <>
       <TransitionOut />
       {triggerMobileLayout.show && width <= 500 && (
-        <TransitionMobile
-          triggerMobileLayout={triggerMobileLayout}
-          setTriggerMobileLayout={setTriggerMobileLayout}
-        />
+        <Div100vh>
+          <TransitionMobile
+            triggerMobileLayout={triggerMobileLayout}
+            setTriggerMobileLayout={setTriggerMobileLayout}
+          />
+        </Div100vh>
       )}
       {triggerContactAnimation && (
         <TransitionIn setTriggerContactAnimation={setTriggerContactAnimation} />
