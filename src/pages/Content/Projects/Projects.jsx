@@ -100,6 +100,7 @@ const Projects = ({ onClose, setShowDeveloperNavigation }) => {
 
       <div className="project-wrapper">
         <p
+          className="project-close-presentation"
           style={{
             position: "absolute",
             top: "2.5rem",
