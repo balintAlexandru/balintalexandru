@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/personal-site-v2/static/css/main.64d465df.css",
+    "main.js": "/personal-site-v2/static/js/main.a86770b9.js",
+    "static/media/mobileApp.mp4": "/personal-site-v2/static/media/mobileApp.e6b0af3ac281f5481f28.mp4",
+    "static/media/companyApp.mp4": "/personal-site-v2/static/media/companyApp.f89606de35637e43284f.mp4",
+    "static/media/portfolio.mp4": "/personal-site-v2/static/media/portfolio.fa2def18bb16e3641444.mp4",
+    "static/media/managementApp.mp4": "/personal-site-v2/static/media/managementApp.b4afb9fff91e572b8b58.mp4",
+    "static/media/developer.webp": "/personal-site-v2/static/media/developer.8c8859b9a15f5538c6ee.webp",
+    "static/media/circle-large.webp": "/personal-site-v2/static/media/circle-large.14ee0eedced789d31849.webp",
+    "static/media/person.webp": "/personal-site-v2/static/media/person.74278e1b214a636cc0a1.webp",
+    "static/media/circle-small.webp": "/personal-site-v2/static/media/circle-small.cf5d08cab8705621f2c7.webp",
+    "static/media/logiscool.webp": "/personal-site-v2/static/media/logiscool.8eab90b403da5f3454e7.webp",
+    "static/media/wtz.webp": "/personal-site-v2/static/media/wtz.825aac104a15cb5163fd.webp",
+    "static/media/tec.webp": "/personal-site-v2/static/media/tec.a98eb1b5e3044f94363f.webp",
+    "static/media/iSoft.webp": "/personal-site-v2/static/media/iSoft.a95465cfb260fe0dcc4c.webp",
+    "index.html": "/personal-site-v2/index.html",
+    "main.64d465df.css.map": "/personal-site-v2/static/css/main.64d465df.css.map",
+    "main.a86770b9.js.map": "/personal-site-v2/static/js/main.a86770b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64d465df.css",
+    "static/js/main.a86770b9.js"
+  ]
+}
