@@ -50,7 +50,7 @@ const LoadingPage = () => {
       return 60;
     }
   };
-  console.log(verticalAnimation2());
+
   useEffect(() => {
     setTimeout(() => {
       lineShowAnimation(path.loadingLine, 2);
