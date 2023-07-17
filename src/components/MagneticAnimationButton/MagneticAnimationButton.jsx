@@ -2,7 +2,10 @@ import gsap, { Power2, Power3, Power4, Elastic } from "gsap";
 import React, { useEffect } from "react";
 
 import "./MagneticAnimationButtonStyle.scss";
-import { triggerShowAnimation } from "../../utils/gsap/animations";
+import {
+  triggerHideAnimation,
+  triggerShowAnimation,
+} from "../../utils/gsap/animations";
 
 const MagneticAnimationButton = () => {
   useEffect(() => {
@@ -86,14 +89,19 @@ const MagneticAnimationButton = () => {
   }, []);
 
   return (
-    <div className="wrapper">
+    <div className="wrapper experience-present">
       <div className="btn btn-normal">
         <div
           onClick={() => {
-            triggerShowAnimation(".text-wrapper", 1, 1);
-            triggerShowAnimation(".text-dot-1", 1.5, 0.6);
-            triggerShowAnimation(".text-dot-2", 1.5, 0.3);
-            triggerShowAnimation(".text-dot-3", 1.5, 0);
+            if (window.innerWidth > 500) {
+              triggerShowAnimation(".text-wrapper", 1, 1);
+              triggerShowAnimation(".text-dot-1", 1.5, 0.6);
+              triggerShowAnimation(".text-dot-2", 1.5, 0.3);
+              triggerShowAnimation(".text-dot-3", 1.5, 0);
+            } else {
+              triggerShowAnimation(".mobile-experience-info", 1, 0.3);
+              triggerHideAnimation(".experience-present", 0);
+            }
           }}
           className="btn-click magnetic"
           data-strength="25"

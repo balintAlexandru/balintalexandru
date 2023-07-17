@@ -11,6 +11,7 @@
     margin-top: 4rem;
     padding: 0;
     left: 0rem;
+    overflow-y: auto;
   }
   @media only screen and (min-width: 1024px) and (max-width: 1280px) {
     width: 30rem;
@@ -37,8 +38,8 @@
     color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
     @media only screen and (max-width: 500px) {
-      font-size: 3.4rem;
-      margin-top: 5rem;
+      font-size: 2.4rem;
+      margin-top: 0rem;
       padding-left: 2.5rem;
     }
     @media only screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -363,6 +364,53 @@
         }
         .animation-button {
           display: none;
+          position: relative;
+          width: 100%;
+          .mobile-experience-info {
+            display: none;
+            opacity: 0;
+            width: 87%;
+            height: 10rem;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 2rem;
+            overflow: hidden;
+            padding: 1rem;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.3rem;
+            .line-1 {
+              font-size: 1.6rem;
+              text-align: left;
+              white-space: nowrap;
+              color: black;
+              font-weight: 600;
+
+              overflow: hidden;
+            }
+            .anim-typewriter {
+              animation: typewriter 3s steps(44) 1.1s 1 normal both;
+            }
+            .anim-2-typewriter {
+              animation: typewriter 3s steps(44) 3.9s 1 normal both;
+            }
+            .keep-in-touch {
+              font-weight: 600;
+              background-color: rgb(119, 203, 119);
+              padding: 0.5rem;
+              color: white;
+            }
+            @keyframes typewriter {
+              from {
+                width: 0;
+              }
+              to {
+                width: 100%;
+              }
+            }
+          }
         }
       }
     }

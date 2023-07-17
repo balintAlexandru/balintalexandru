@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "./Image/Image";
 import "./ContentStyle.scss";
 import {
+  triggerHideAnimation,
   triggerShowAnimation,
   triggerXPozAnimation,
 } from "../../utils/gsap/animations";
@@ -19,7 +20,7 @@ import { path } from "../../utils/gsap/constants";
 import Technologies from "./Technologies/Technologies";
 import Projects from "./Projects/Projects";
 
-const Content = ({ setTriggerMobileLayout }) => {
+const Content = ({ setTriggerMobileLayout, setTriggerContactAnimation }) => {
   const [showCursorDelay, setShowCursorDelay] = useState(false);
   const [isPersonOpen, setIsPersonOpen] = useState(false);
   const [isDeveloperOpen, setIsDeveloperOpen] = useState(false);
@@ -281,7 +282,25 @@ const Content = ({ setTriggerMobileLayout }) => {
           <p className="line-1 anim-typewriter">
             In present I work as a freelancer
           </p>
-          <p className="line-1 anim-2-typewriter">so let's keep in touch.</p>
+          <p className="line-1 anim-2-typewriter">
+            so let's{" "}
+            <span
+              className="keep-in-touch"
+              onClick={() => {
+                setTriggerContactAnimation(true);
+                triggerShowAnimation(path.developerImage, 0.2);
+                setShowPersonNavigation(true);
+                setSelectedExperience(false);
+                triggerHideAnimation(".text-wrapper", 0);
+                triggerHideAnimation(".text-dot-1", 0);
+                triggerHideAnimation(".text-dot-2", 0);
+                triggerHideAnimation(".text-dot-3", 0);
+              }}
+            >
+              keep in touch
+            </span>
+            .
+          </p>
         </div>
         <div className="text-dot-1" />
         <div className="text-dot-2" />

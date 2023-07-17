@@ -96,7 +96,11 @@ const triggerTransitionOut = () => {
   );
 };
 
-const TransitionMobile = ({ triggerMobileLayout, setTriggerMobileLayout }) => {
+const TransitionMobile = ({
+  triggerMobileLayout,
+  setTriggerMobileLayout,
+  setTriggerContactAnimation,
+}) => {
   useEffect(() => {
     pageTransitionIn();
   }, []);
@@ -104,7 +108,12 @@ const TransitionMobile = ({ triggerMobileLayout, setTriggerMobileLayout }) => {
   const currentPage = (name) => {
     switch (name) {
       case "Experience":
-        return <Experience />;
+        return (
+          <Experience
+            setTriggerContactAnimation={setTriggerContactAnimation}
+            setTriggerMobileLayout={setTriggerMobileLayout}
+          />
+        );
       case "About me":
         return <AboutMe />;
       case "Projects":

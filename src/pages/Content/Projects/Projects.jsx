@@ -7,7 +7,7 @@ import companyApp from "../../../assets/videos/companyApp.mp4";
 import managementApp from "../../../assets/videos/managementApp.mp4";
 import mobileApp from "../../../assets/videos/mobileApp.mp4";
 import portfolio from "../../../assets/videos/portfolio.mp4";
-
+import { CgClose } from "react-icons/cg";
 import {
   fadeInShowAnimation,
   triggerShowAnimation,
@@ -68,7 +68,11 @@ const Projects = ({ onClose, setShowDeveloperNavigation }) => {
   };
 
   useEffect(() => {
-    fadeInShowAnimation(".projects-title", 1);
+    fadeInShowAnimation(
+      ".projects-title",
+      1,
+      window.innerWidth <= 500 ? 0.5 : 0
+    );
     fadeInShowAnimation(path.aboutMeCloseButton, 2);
     lineShowAnimation(".bottom-line-projects", 1);
 
@@ -112,12 +116,13 @@ const Projects = ({ onClose, setShowDeveloperNavigation }) => {
           size="2.5rem"
           color="white"
           onClick={() => {
+            document.querySelector(".projects-container").style.zIndex = "9";
             triggerHideTransitionScaleAnimation(".transition-in-project");
             triggerHideAnimation(".project-wrapper", 0);
             setCurrentProject("");
           }}
         >
-          🗙
+          <CgClose size={iconSize()} />
         </p>
         <div className="project-content">
           <h1>{currentProject.name}</h1>
@@ -183,7 +188,10 @@ const Projects = ({ onClose, setShowDeveloperNavigation }) => {
           handleClick();
         }}
       >
-        <MagneticButton title="🗙" fontSize={iconSize()} />
+        <MagneticButton
+          title={<CgClose size={iconSize()} />}
+          fontSize={iconSize()}
+        />
       </div>
 
       <div className="bottom-line-projects" />

@@ -23,21 +23,23 @@ const App = () => {
   return (
     <>
       <TransitionOut />
-      {triggerMobileLayout.show && width <= 500 && (
-        <Div100vh>
-          <TransitionMobile
-            triggerMobileLayout={triggerMobileLayout}
-            setTriggerMobileLayout={setTriggerMobileLayout}
-          />
-        </Div100vh>
-      )}
       {triggerContactAnimation && (
         <TransitionIn setTriggerContactAnimation={setTriggerContactAnimation} />
       )}
       <Div100vh>
         <Layout setTriggerContactAnimation={setTriggerContactAnimation}>
-          <Content setTriggerMobileLayout={setTriggerMobileLayout} />
+          <Content
+            setTriggerMobileLayout={setTriggerMobileLayout}
+            setTriggerContactAnimation={setTriggerContactAnimation}
+          />
         </Layout>
+        {triggerMobileLayout.show && width <= 500 && (
+          <TransitionMobile
+            triggerMobileLayout={triggerMobileLayout}
+            setTriggerMobileLayout={setTriggerMobileLayout}
+            setTriggerContactAnimation={setTriggerContactAnimation}
+          />
+        )}
       </Div100vh>
     </>
   );

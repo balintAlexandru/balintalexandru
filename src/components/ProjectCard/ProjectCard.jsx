@@ -8,7 +8,13 @@ import {
 
 const ProjectCard = ({ index, project, setCurrentProject }) => {
   useEffect(() => {
-    triggerShowProjectCard(`.card-${index}`, 0.5, index * 0.2);
+    setTimeout(
+      () => {
+        triggerShowProjectCard(`.card-${index}`, 0.5, index * 0.2);
+      },
+      window.innerWidth <= 500 ? 600 : 0
+    );
+
     const $card = document.querySelector(`.card-${index}`);
     let bounds;
     function rotateToMouse(e) {
@@ -52,6 +58,7 @@ const ProjectCard = ({ index, project, setCurrentProject }) => {
           <button
             className="button-wrapper"
             onClick={() => {
+              document.querySelector(".projects-container").style.zIndex = "20";
               setCurrentProject(project);
               triggerShowTransitionScaleAnimation(".transition-in-project");
               triggerShowAnimationDuration(".project-wrapper", 0.2, 0.5);

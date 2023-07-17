@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import "./TechnologiesStyle.scss";
 
 import { path } from "../../../utils/gsap/constants";
-
+import { CgClose } from "react-icons/cg";
 import {
   fadeInShowAnimation,
   triggerShowAnimation,
@@ -57,7 +57,10 @@ const Technologies = ({ onClose, setShowDeveloperNavigation }) => {
             handleClick();
           }}
         >
-          <MagneticButton title="🗙" fontSize={iconSize()} />
+          <MagneticButton
+            title={<CgClose size={iconSize()} />}
+            fontSize={iconSize()}
+          />
         </div>
 
         <TechnologiesCard />

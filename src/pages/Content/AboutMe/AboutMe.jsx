@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "./AboutMeStyle.scss";
 
 import { path } from "../../../utils/gsap/constants";
+import { CgClose } from "react-icons/cg";
 import { textContent } from "../../../utils/textContent";
 import {
   fadeInShowAnimation,
@@ -32,11 +33,19 @@ const AboutMe = ({ onClose, setShowPersonNavigation }) => {
   };
 
   useEffect(() => {
-    fadeInShowAnimation(path.aboutMeTitle, 1);
+    fadeInShowAnimation(
+      path.aboutMeTitle,
+      1,
+      window.innerWidth <= 500 ? 0.5 : 0
+    );
     fadeInShowAnimation(path.aboutMeCloseButton, 2);
     lineShowAnimation(path.aboutMeBottomLine, 1);
     document.querySelectorAll(".text-info").forEach((element, index) => {
-      fadeInShowAnimation(element, 2, index * 0.5);
+      fadeInShowAnimation(
+        element,
+        2,
+        1 + index * (window.innerWidth <= 500 ? 0.6 : 0.5)
+      );
     });
   }, []);
 
@@ -57,7 +66,10 @@ const AboutMe = ({ onClose, setShowPersonNavigation }) => {
           handleClick();
         }}
       >
-        <MagneticButton title="🗙" fontSize={iconSize()} />
+        <MagneticButton
+          title={<CgClose size={iconSize()} />}
+          fontSize={iconSize()}
+        />
       </div>
     </div>
   );

@@ -11,10 +11,17 @@ import {
 import { EXPERIENCE_LIST } from "../../../utils/experience";
 
 import "./ExperienceStyle.scss";
+import { CgClose } from "react-icons/cg";
 import MagneticButton from "../../../components/MagneticButton/MagneticButton";
 import MagneticAnimationButton from "../../../components/MagneticAnimationButton/MagneticAnimationButton";
 
-const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
+const Experience = ({
+  onClose,
+  setShowPersonNavigation,
+  setShowDots,
+  setTriggerContactAnimation = () => {},
+  setTriggerMobileLayout = () => {},
+}) => {
   const handleClick = () => {
     triggerShowAnimation(path.developerImage, 0.2);
     setShowPersonNavigation(true);
@@ -91,13 +98,23 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
   };
 
   useEffect(() => {
-    fadeInShowAnimation(path.experienceTitle, 1);
+    fadeInShowAnimation(
+      path.experienceTitle,
+      1,
+      window.innerWidth <= 500 ? 0.5 : 0
+    );
     fadeInShowAnimation(path.experienceCloseButton, 2);
     lineShowAnimation(path.experienceBottomLine, 1);
-    CombineAnimation(0, 1.2, 0);
-    CombineAnimation(1, 1.2, 1);
-    CombineAnimation(2, 1.2, 2);
-    CombineAnimation(3, 1.2, 3);
+    setTimeout(
+      () => {
+        CombineAnimation(0, 1.2, 0);
+        CombineAnimation(1, 1.2, 1);
+        CombineAnimation(2, 1.2, 2);
+        CombineAnimation(3, 1.2, 3);
+      },
+      window.innerWidth <= 500 ? 600 : 0
+    );
+
     triggerVerticalAnimationLine(`.line-button`, 1.2, 4.5, buttonLineSize());
     triggerShowAnimationDuration(`.circle-button`, 1.2, 4.9);
     triggerShowAnimationDuration(`.animation-button`, 1.2, 5.3);
@@ -135,6 +152,29 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
             <dir className="circle circle-button" />
             <div className="animation-button">
               <MagneticAnimationButton />
+              {window.innerWidth <= 500 && (
+                <div className="mobile-experience-info">
+                  <p className="line-1 anim-typewriter">
+                    In present I work as a freelancer
+                  </p>
+                  <p className="line-1 anim-2-typewriter">
+                    so let's{" "}
+                    <span
+                      className="keep-in-touch"
+                      onClick={() => {
+                        setTriggerContactAnimation(true);
+                        setTriggerMobileLayout({
+                          show: false,
+                          page: "",
+                        });
+                      }}
+                    >
+                      keep in touch
+                    </span>
+                    .
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -147,7 +187,7 @@ const Experience = ({ onClose, setShowPersonNavigation, setShowDots }) => {
         }}
       >
         <MagneticButton
-          title="🗙"
+          title={<CgClose size={iconSize()} />}
           fontSize={iconSize()}
           setShowDots={setShowDots}
         />
