@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/balintalexandru/static/css/main.64d465df.css",
+    "main.css": "/balintalexandru/static/css/main.3902c898.css",
     "main.js": "/balintalexandru/static/js/main.40dcf9a6.js",
     "static/media/mobileApp.mp4": "/balintalexandru/static/media/mobileApp.e6b0af3ac281f5481f28.mp4",
     "static/media/companyApp.mp4": "/balintalexandru/static/media/companyApp.f89606de35637e43284f.mp4",
@@ -15,11 +15,11 @@
     "static/media/tec.webp": "/balintalexandru/static/media/tec.a98eb1b5e3044f94363f.webp",
     "static/media/iSoft.webp": "/balintalexandru/static/media/iSoft.a95465cfb260fe0dcc4c.webp",
     "index.html": "/balintalexandru/index.html",
-    "main.64d465df.css.map": "/balintalexandru/static/css/main.64d465df.css.map",
+    "main.3902c898.css.map": "/balintalexandru/static/css/main.3902c898.css.map",
     "main.40dcf9a6.js.map": "/balintalexandru/static/js/main.40dcf9a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.64d465df.css",
+    "static/css/main.3902c898.css",
     "static/js/main.40dcf9a6.js"
   ]
 }
