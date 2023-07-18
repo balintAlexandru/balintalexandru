@@ -91,7 +91,7 @@ const TransitionOut = () => {
   useEffect(() => {
     setTimeout(() => {
       transitionOut();
-    }, 1000);
+    }, 1200);
   }, []);
 
   return (

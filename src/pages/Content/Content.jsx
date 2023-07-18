@@ -37,7 +37,7 @@ const Content = ({ setTriggerMobileLayout, setTriggerContactAnimation }) => {
       setShowCursorDelay(true);
     }, 200);
 
-    triggerShowAnimation(".content-wrapper", 1.5, 7);
+    triggerShowAnimation(".content-wrapper", 1.5, 7.5);
   }, []);
 
   const personMove = () => {
