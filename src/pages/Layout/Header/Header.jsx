@@ -15,7 +15,7 @@ const Header = () => {
           <span className="header-lastName">Alexandru</span>
           <span className="header-firstName">{`<Balint/>`}</span>
         </div>
-        <span className="header-secondary">{`{ Front-end developer }`}</span>
+        <span className="role-text">{`{ Front-end developer }`}</span>
       </div>
     </header>
   );
