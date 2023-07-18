@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Image from "./Image/Image";
 import "./ContentStyle.scss";
 import {
   triggerHideAnimation,
@@ -19,6 +18,8 @@ import { path } from "../../utils/gsap/constants";
 
 import Technologies from "./Technologies/Technologies";
 import Projects from "./Projects/Projects";
+
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Content = ({ setTriggerMobileLayout, setTriggerContactAnimation }) => {
   const [showCursorDelay, setShowCursorDelay] = useState(false);
@@ -145,7 +146,12 @@ const Content = ({ setTriggerMobileLayout, setTriggerContactAnimation }) => {
             }
           }}
         >
-          <Image image={person} />
+          <LazyLoadImage
+            src={person}
+            width={"100%"}
+            height={"100%"}
+            alt="person"
+          />
         </div>
 
         <div className="vertical-line" />
@@ -228,7 +234,12 @@ const Content = ({ setTriggerMobileLayout, setTriggerContactAnimation }) => {
             }
           }}
         >
-          <Image image={developer} />
+          <LazyLoadImage
+            src={developer}
+            width={"100%"}
+            height={"100%"}
+            alt="developer"
+          />
         </div>
 
         {selectedExperience && (

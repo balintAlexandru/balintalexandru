@@ -15,6 +15,8 @@ import { CgClose } from "react-icons/cg";
 import MagneticButton from "../../../components/MagneticButton/MagneticButton";
 import MagneticAnimationButton from "../../../components/MagneticAnimationButton/MagneticAnimationButton";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 const Experience = ({
   onClose,
   setShowPersonNavigation,
@@ -136,7 +138,7 @@ const Experience = ({
               <div className="row-2">
                 <div className={`line-experience-${index}`} />
                 <div className={`wrapper wrapper-${index}`}>
-                  <img src={item.image} alt="icon" />
+                  <LazyLoadImage src={item.image} alt="icon" />
                   <div className="item-text">
                     <h2>{item.name}</h2>
                     <span>{item.role}</span>

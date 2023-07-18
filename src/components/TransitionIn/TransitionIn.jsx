@@ -10,6 +10,8 @@ import circleSmall from "../../assets/images/circle-small.svg";
 import { triggerHideAnimation } from "../../utils/gsap/animations";
 import { CgClose } from "react-icons/cg";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 function pageTransitionIn() {
   var tl = gsap.timeline();
 
@@ -152,8 +154,22 @@ const TransitionIn = ({ setTriggerContactAnimation }) => {
           <div className="rounded-div"></div>
         </div>
       </div>
-      <img src={circleLarge} alt="poza" className="circle-large" />
-      <img src={circleSmall} alt="poza" className="circle-small" />
+      <div className="circle-large">
+        <LazyLoadImage
+          src={circleLarge}
+          width={"100%"}
+          height={"100%"}
+          alt="poza"
+        />
+      </div>
+      <div className="circle-small">
+        <LazyLoadImage
+          src={circleSmall}
+          width={"100%"}
+          height={"100%"}
+          alt="poza"
+        />
+      </div>
     </div>
   );
 };
