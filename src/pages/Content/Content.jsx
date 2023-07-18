@@ -6,8 +6,8 @@ import {
   triggerShowAnimation,
   triggerXPozAnimation,
 } from "../../utils/gsap/animations";
-import person from "../../../src/assets/images/person.webp";
-import developer from "../../../src/assets/images/developer.webp";
+import person from "../../../src/assets/images/person.svg";
+import developer from "../../../src/assets/images/developer.svg";
 import MagneticPerson from "../../components/MagneticPerson/MagneticPerson";
 import MagneticDeveloper from "../../components/MagneticDeveloper/MagneticDeveloper";
 import DeveloperNavigation from "./DeveloperNavigation/DeveloperNavigation";
@@ -56,7 +56,7 @@ const Content = ({ setTriggerMobileLayout, setTriggerContactAnimation }) => {
     } else if (width <= 500) {
       return -45;
     } else {
-      return -80;
+      return -70;
     }
   };
 
@@ -77,7 +77,7 @@ const Content = ({ setTriggerMobileLayout, setTriggerContactAnimation }) => {
     } else if (width <= 500) {
       return 45;
     } else {
-      return 80;
+      return 70;
     }
   };
 

@@ -1,7 +1,7 @@
-import wtz from "../assets/images/wtz.webp";
-import logiscool from "../assets/images/logiscool.webp";
-import tec from "../assets/images/tec.webp";
-import iSoft from "../assets/images/iSoft.webp";
+import wtz from "../assets/images/wtz.svg";
+import logiscool from "../assets/images/logiscool.svg";
+import tec from "../assets/images/tec.svg";
+import iSoft from "../assets/images/iSoft.svg";
 
 export const EXPERIENCE_LIST = [
   {

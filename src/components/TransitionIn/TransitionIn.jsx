@@ -5,8 +5,8 @@ import { useEffect } from "react";
 import "./TransitionInStyle.scss";
 import ContactForm from "../ContactForm/ContactForm";
 
-import circleLarge from "../../assets/images/circle-large.webp";
-import circleSmall from "../../assets/images/circle-small.webp";
+import circleLarge from "../../assets/images/circle-large.svg";
+import circleSmall from "../../assets/images/circle-small.svg";
 import { triggerHideAnimation } from "../../utils/gsap/animations";
 import { CgClose } from "react-icons/cg";
 
