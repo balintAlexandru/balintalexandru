@@ -150,7 +150,7 @@ const Content = ({ setTriggerMobileLayout, setTriggerContactAnimation }) => {
             src={person}
             width={"100%"}
             height={"100%"}
-            alt="person"
+            alt="person-image"
           />
         </div>
 
@@ -238,7 +238,7 @@ const Content = ({ setTriggerMobileLayout, setTriggerContactAnimation }) => {
             src={developer}
             width={"100%"}
             height={"100%"}
-            alt="developer"
+            alt="developer-image"
           />
         </div>
 
