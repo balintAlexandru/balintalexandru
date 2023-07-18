@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/balintalexandru/static/css/main.3902c898.css",
-    "main.js": "/balintalexandru/static/js/main.40dcf9a6.js",
+    "main.js": "/balintalexandru/static/js/main.c78cb181.js",
     "static/media/mobileApp.mp4": "/balintalexandru/static/media/mobileApp.e6b0af3ac281f5481f28.mp4",
     "static/media/companyApp.mp4": "/balintalexandru/static/media/companyApp.f89606de35637e43284f.mp4",
     "static/media/portfolio.mp4": "/balintalexandru/static/media/portfolio.fa2def18bb16e3641444.mp4",
     "static/media/managementApp.mp4": "/balintalexandru/static/media/managementApp.b4afb9fff91e572b8b58.mp4",
-    "static/media/developer.webp": "/balintalexandru/static/media/developer.8c8859b9a15f5538c6ee.webp",
-    "static/media/circle-large.webp": "/balintalexandru/static/media/circle-large.14ee0eedced789d31849.webp",
-    "static/media/person.webp": "/balintalexandru/static/media/person.74278e1b214a636cc0a1.webp",
-    "static/media/circle-small.webp": "/balintalexandru/static/media/circle-small.cf5d08cab8705621f2c7.webp",
-    "static/media/logiscool.webp": "/balintalexandru/static/media/logiscool.8eab90b403da5f3454e7.webp",
-    "static/media/wtz.webp": "/balintalexandru/static/media/wtz.825aac104a15cb5163fd.webp",
-    "static/media/tec.webp": "/balintalexandru/static/media/tec.a98eb1b5e3044f94363f.webp",
-    "static/media/iSoft.webp": "/balintalexandru/static/media/iSoft.a95465cfb260fe0dcc4c.webp",
+    "static/media/developer.svg": "/balintalexandru/static/media/developer.541a451249db47b6d95e21d98ecb897f.svg",
+    "static/media/person.svg": "/balintalexandru/static/media/person.998d19b7cf5e4a55e2d6169f553ebf62.svg",
+    "static/media/circle-large.svg": "/balintalexandru/static/media/circle-large.ee369ba0e83987fbc4e3c08c0510c8d5.svg",
+    "static/media/logiscool.svg": "/balintalexandru/static/media/logiscool.69bb3c266936fbf0787e05a1cad64e63.svg",
+    "static/media/circle-small.svg": "/balintalexandru/static/media/circle-small.9e92618bd02a5629166f4b024ffc8a0c.svg",
+    "static/media/wtz.svg": "/balintalexandru/static/media/wtz.1013796352446fc9fadd1bd7c6ab009a.svg",
+    "static/media/iSoft.svg": "/balintalexandru/static/media/iSoft.a143ba97785c21f090d275d96c40ec8c.svg",
+    "static/media/tec.svg": "/balintalexandru/static/media/tec.d562fff00c1a1197ca3e13057264bf77.svg",
     "index.html": "/balintalexandru/index.html",
     "main.3902c898.css.map": "/balintalexandru/static/css/main.3902c898.css.map",
-    "main.40dcf9a6.js.map": "/balintalexandru/static/js/main.40dcf9a6.js.map"
+    "main.c78cb181.js.map": "/balintalexandru/static/js/main.c78cb181.js.map"
   },
   "entrypoints": [
     "static/css/main.3902c898.css",
-    "static/js/main.40dcf9a6.js"
+    "static/js/main.c78cb181.js"
   ]
 }
