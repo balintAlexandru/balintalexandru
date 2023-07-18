@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/balintalexandru/static/css/main.8e39a144.css",
-    "main.js": "/balintalexandru/static/js/main.33abb13d.js",
+    "main.css": "/balintalexandru/static/css/main.a79103fb.css",
+    "main.js": "/balintalexandru/static/js/main.74bffb07.js",
     "static/media/mobileApp.mp4": "/balintalexandru/static/media/mobileApp.e6b0af3ac281f5481f28.mp4",
     "static/media/companyApp.mp4": "/balintalexandru/static/media/companyApp.f89606de35637e43284f.mp4",
     "static/media/portfolio.mp4": "/balintalexandru/static/media/portfolio.fa2def18bb16e3641444.mp4",
@@ -15,11 +15,11 @@
     "static/media/iSoft.svg": "/balintalexandru/static/media/iSoft.a143ba97785c21f090d275d96c40ec8c.svg",
     "static/media/tec.svg": "/balintalexandru/static/media/tec.d562fff00c1a1197ca3e13057264bf77.svg",
     "index.html": "/balintalexandru/index.html",
-    "main.8e39a144.css.map": "/balintalexandru/static/css/main.8e39a144.css.map",
-    "main.33abb13d.js.map": "/balintalexandru/static/js/main.33abb13d.js.map"
+    "main.a79103fb.css.map": "/balintalexandru/static/css/main.a79103fb.css.map",
+    "main.74bffb07.js.map": "/balintalexandru/static/js/main.74bffb07.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e39a144.css",
-    "static/js/main.33abb13d.js"
+    "static/css/main.a79103fb.css",
+    "static/js/main.74bffb07.js"
   ]
 }
