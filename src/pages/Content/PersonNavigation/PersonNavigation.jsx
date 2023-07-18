@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./PersonNavigation.scss";
 import { path } from "../../../utils/gsap/constants";
 import {
