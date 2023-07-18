@@ -53,7 +53,7 @@ const LoadingPage = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      lineShowAnimation(path.loadingLine, 2);
+      lineShowAnimation(path.loadingLine, 2, 0);
       const startAnimation = setInterval(() => {
         if (loaderRef) {
           if (loaderRef.current.innerHTML !== 100) {
@@ -83,16 +83,16 @@ const LoadingPage = () => {
           }
         }
       }, 30);
-    }, 500);
+    }, 0);
     // eslint-disable-next-line
   }, []);
 
   return (
     <>
       <div className="loading-page-wrapper">
-        <p className="loading-text">
+        <h2 className="loading-text">
           <span ref={loaderRef}>0</span>%
-        </p>
+        </h2>
         <div className="loading-box">
           <span className="last-name">Alexandru</span>
         </div>
@@ -101,7 +101,7 @@ const LoadingPage = () => {
           <span className="first-name">{`<Balint/>`}</span>
         </div>
       </div>
-      <p className="loading-role">{`{ Front-end developer }`}</p>
+      <h2 className="loading-role">{`{ Front-end developer }`}</h2>
     </>
   );
 };
