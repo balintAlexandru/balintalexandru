@@ -83,7 +83,7 @@ const LoadingPage = () => {
           }
         }
       }, 30);
-    }, 0);
+    }, 1000);
     // eslint-disable-next-line
   }, []);
 

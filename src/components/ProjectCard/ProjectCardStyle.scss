@@ -19,22 +19,27 @@
   @media only screen and (min-width: 1024px) and (max-width: 1280px) {
     width: 30rem;
     padding: 1.5rem 2rem;
+    right: -70rem;
   }
   @media only screen and (min-width: 1366px) and (max-width: 1440px) {
     width: 35rem;
     padding: 2rem 3rem;
+    right: -70rem;
   }
   @media only screen and (min-width: 2304px) and (max-width: 2560px) {
     width: 45rem;
     padding: 4rem 3rem;
+    right: -70rem;
   }
   @media only screen and (min-width: 2880px) {
     width: 48rem;
     padding: 5rem 3rem;
+    right: -70rem;
   }
   @media only screen and (min-width: 3840px) {
     width: 58rem;
     padding: 3rem;
+    right: -70rem;
   }
   h2 {
     font-size: 2.4rem;
