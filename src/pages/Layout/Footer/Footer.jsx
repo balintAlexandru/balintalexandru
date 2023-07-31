@@ -10,7 +10,7 @@ import { path } from "../../../utils/gsap/constants";
 
 const Footer = ({ setTriggerContactAnimation }) => {
   useEffect(() => {
-    triggerSlideInAnimation(path.layoutFooter, 90, 0, 0.5, 8.5);
+    triggerSlideInAnimation(path.layoutFooter, 90, 0, 0.5, 8);
   }, []);
 
   const currentWidth = () => {
