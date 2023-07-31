@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.06159eae.css",
-    "main.js": "/static/js/main.c9577bd0.js",
-    "static/media/mobileApp.mp4": "/static/media/mobileApp.e6b0af3ac281f5481f28.mp4",
-    "static/media/companyApp.mp4": "/static/media/companyApp.f89606de35637e43284f.mp4",
-    "static/media/portfolio.mp4": "/static/media/portfolio.fa2def18bb16e3641444.mp4",
-    "static/media/managementApp.mp4": "/static/media/managementApp.b4afb9fff91e572b8b58.mp4",
-    "static/media/developer.svg": "/static/media/developer.541a451249db47b6d95e21d98ecb897f.svg",
-    "static/media/person.svg": "/static/media/person.998d19b7cf5e4a55e2d6169f553ebf62.svg",
-    "static/media/circle-large.svg": "/static/media/circle-large.ee369ba0e83987fbc4e3c08c0510c8d5.svg",
-    "static/media/logiscool.svg": "/static/media/logiscool.69bb3c266936fbf0787e05a1cad64e63.svg",
-    "static/media/circle-small.svg": "/static/media/circle-small.9e92618bd02a5629166f4b024ffc8a0c.svg",
-    "static/media/wtz.svg": "/static/media/wtz.1013796352446fc9fadd1bd7c6ab009a.svg",
-    "static/media/iSoft.svg": "/static/media/iSoft.a143ba97785c21f090d275d96c40ec8c.svg",
-    "static/media/tec.svg": "/static/media/tec.d562fff00c1a1197ca3e13057264bf77.svg",
-    "index.html": "/index.html",
-    "main.06159eae.css.map": "/static/css/main.06159eae.css.map",
-    "main.c9577bd0.js.map": "/static/js/main.c9577bd0.js.map"
+    "main.css": "/balintalexandru/static/css/main.06159eae.css",
+    "main.js": "/balintalexandru/static/js/main.aa1969b1.js",
+    "static/media/mobileApp.mp4": "/balintalexandru/static/media/mobileApp.e6b0af3ac281f5481f28.mp4",
+    "static/media/companyApp.mp4": "/balintalexandru/static/media/companyApp.f89606de35637e43284f.mp4",
+    "static/media/portfolio.mp4": "/balintalexandru/static/media/portfolio.fa2def18bb16e3641444.mp4",
+    "static/media/managementApp.mp4": "/balintalexandru/static/media/managementApp.b4afb9fff91e572b8b58.mp4",
+    "static/media/developer.svg": "/balintalexandru/static/media/developer.541a451249db47b6d95e21d98ecb897f.svg",
+    "static/media/person.svg": "/balintalexandru/static/media/person.998d19b7cf5e4a55e2d6169f553ebf62.svg",
+    "static/media/circle-large.svg": "/balintalexandru/static/media/circle-large.ee369ba0e83987fbc4e3c08c0510c8d5.svg",
+    "static/media/logiscool.svg": "/balintalexandru/static/media/logiscool.69bb3c266936fbf0787e05a1cad64e63.svg",
+    "static/media/circle-small.svg": "/balintalexandru/static/media/circle-small.9e92618bd02a5629166f4b024ffc8a0c.svg",
+    "static/media/wtz.svg": "/balintalexandru/static/media/wtz.1013796352446fc9fadd1bd7c6ab009a.svg",
+    "static/media/iSoft.svg": "/balintalexandru/static/media/iSoft.a143ba97785c21f090d275d96c40ec8c.svg",
+    "static/media/tec.svg": "/balintalexandru/static/media/tec.d562fff00c1a1197ca3e13057264bf77.svg",
+    "index.html": "/balintalexandru/index.html",
+    "main.06159eae.css.map": "/balintalexandru/static/css/main.06159eae.css.map",
+    "main.aa1969b1.js.map": "/balintalexandru/static/js/main.aa1969b1.js.map"
   },
   "entrypoints": [
     "static/css/main.06159eae.css",
-    "static/js/main.c9577bd0.js"
+    "static/js/main.aa1969b1.js"
   ]
 }
