@@ -45,7 +45,7 @@ function transitionOut() {
     duration: 0.8,
     top: "-100%",
     ease: "Power4.easeInOut",
-    delay: 6.8,
+    delay: 6.6,
   });
 
   tl.to(
